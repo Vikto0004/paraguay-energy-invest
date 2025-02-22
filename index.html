@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WealthWise</title>
+    <title>KazGrowth Consulting</title>
     <link rel="icon" href="images/logo.png" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
@@ -18,470 +21,626 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <header class="header">
       <div class="header-wrap">
-        <a href="index.html">
-          <img class="header-logo" src="./images/logo.png" alt="Company Logo" />
+        <a href="index.html" class="logo">
+          <img
+            class="header-logo"
+            src="./images/logo.png"
+            alt="Logo de la Empresa"
+          />
+          KazGrowth Consulting
         </a>
       </div>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><a href="#about-us">About us</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contacts</a></li>
+          <li><a href="#blog">Блог</a></li>
+          <li><a href="#contact">Контакты</a></li>
+          <li><a href="#faq">Часто задаваемые вопросы</a></li>
+          <li><a href="investment-opportunities.html">Инвестиции</a></li>
           <li>
-            <a href="#services">Our Services</a>
+            <a href="case-studies.html">Кейсы</a>
           </li>
-          <li><a href="#faq">FAQ</a></li>
+          <li>
+            <a href="our-services.html">Наши услуги</a>
+          </li>
+          <li>
+            <a href="about-us.html">О нас</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <h1>WealthWise Consulting</h1>
-        <p>Your Trusted Financial Partner</p>
-        <p>
-          Providing expert financial guidance to help you achieve your goals.
-        </p>
-      </div>
-      <div class="hero-media">
-        <img
-          src="images/financial-consulting.jpg"
-          alt="WealthWise Consulting"
-        />
-      </div>
-    </section>
-
-    <section class="section" id="about-us">
-      <div>
-        <h2 class="title">Why Choose Us?</h2>
-        <div class="advantages-list">
-          <div class="advantage-item">
-            <img src="./images/experience.png" alt="Experience Icon" />
-            <h3>Experienced Consultants</h3>
-            <p>
-              Our team consists of industry professionals with years of
-              expertise.
-            </p>
-          </div>
-
-          <div class="advantage-item">
-            <img src="./images/solutions.png" alt="Solutions Icon" />
-            <h3>Personalized Solutions</h3>
-            <p>We create financial strategies tailored to your unique needs.</p>
-          </div>
-
-          <div class="advantage-item">
-            <img src="./images/trust.png" alt="Trust Icon" />
-            <h3>Trusted by Many Clients</h3>
-            <p>
-              We have helped thousands of clients achieve their financial goals.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="blog">
-      <div class="container">
-        <div>
-          <h2 class="title">Financial Insights & Strategies</h2>
-          <p class="descr">
-            Stay updated with the latest trends in financial consulting.
-          </p>
-        </div>
-        <ul class="blog-list">
-          <li class="blog-post">
-            <img
-              src="./images/investment-strategies.jpg"
-              alt="Investment Strategies"
-            />
-            <h3>Top Investment Strategies for 2025</h3>
-            <p>
-              Discover the best financial strategies to maximize your
-              investments this year.
-            </p>
-          </li>
-          <li class="blog-post">
-            <img
-              src="./images/retirement-planning.jpg"
-              alt="Retirement Planning"
-            />
-            <h3>Smart Retirement Planning Tips</h3>
-            <p>
-              Plan your retirement wisely with expert insights and financial
-              planning tools.
-            </p>
-          </li>
-          <li class="blog-post">
-            <img src="./images/tax-optimization.jpg" alt="Tax Optimization" />
-            <h3>Tax Optimization Strategies</h3>
-            <p>
-              Learn how to optimize your taxes and keep more of your hard-earned
-              money.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <h2 class="title">Our Services</h2>
-        <div class="services-list">
-          <div class="service-item">
-            <img
-              src="images/financial-planning.png"
-              alt="Financial Planning"
-              class="service-img"
-            />
-            <h3>Financial Planning</h3>
-            <p>
-              We help you create a personalized financial plan to secure your
-              future.
-            </p>
-          </div>
-          <div class="service-item">
-            <img
-              src="images/investment-management.png"
-              alt="Investment Management"
-              class="service-img"
-            />
-            <h3>Investment Management</h3>
-            <p>
-              Our experts provide tailored investment strategies to grow your
-              wealth.
-            </p>
-          </div>
-          <div class="service-item">
-            <img
-              src="images/tax-advisory.png"
-              alt="Tax Advisory"
-              class="service-img"
-            />
-            <h3>Tax Advisory</h3>
-            <p>
-              Get advice on minimizing taxes and optimizing your financial
-              situation.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="testimonials">
-      <div class="container">
-        <h2 class="title">What Our Clients Say</h2>
-        <ul class="testimonial-list">
-          <li class="testimonial-item">
-            <img
-              src="images/client-3.jpg"
-              alt="Client 1"
-              class="testimonial-img"
-            />
-            <p class="testimonial-text">
-              "WealthWise helped me plan my retirement perfectly. Their expert
-              advice made all the difference!"
-            </p>
-            <p class="client-name">John Doe</p>
-            <p class="client-position">CEO, XYZ Ltd.</p>
-          </li>
-          <li class="testimonial-item">
-            <img
-              src="images/client-5.jpg"
-              alt="Client 2"
-              class="testimonial-img"
-            />
-            <p class="testimonial-text">
-              "I’ve never felt more confident about my financial future. Highly
-              recommend!"
-            </p>
-            <p class="client-name">Jane Smith</p>
-            <p class="client-position">Founder, ABC Corp.</p>
-          </li>
-          <li class="testimonial-item">
-            <img
-              src="images/client-2.jpg"
-              alt="Client 3"
-              class="testimonial-img"
-            />
-            <p class="testimonial-text">
-              "The team at WealthWise helped me organize my finances in ways I
-              never thought possible. It’s truly transformative!"
-            </p>
-            <p class="client-name">Emily Johnson</p>
-            <p class="client-position">Marketing Director, Bright Ideas</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="container faq-container">
-        <h2 class="title">Frequently Asked Questions</h2>
-        <div class="accordion" id="faqAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                What is financial consulting?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                Financial consulting is a service where professionals provide
-                expert advice to individuals, businesses, or organizations to
-                help them make informed financial decisions. It covers areas
-                like investments, tax strategies, retirement planning,
-                budgeting, and risk management. A financial consultant analyzes
-                the client's current financial situation and creates a strategy
-                to improve financial outcomes.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                How do I schedule a consultation?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                Scheduling a consultation is simple. You can either fill out the
-                contact form on our website, indicating your preferred time and
-                date, or directly contact our team through email or phone. Once
-                we receive your inquiry, our team will confirm the appointment
-                and provide further details on how to prepare for the
-                consultation.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Do you offer online consultations?
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                Yes, we do offer online consultations to ensure convenience and
-                accessibility for clients across different locations. We conduct
-                consultations via video conferencing platforms like Zoom or
-                Google Meet. You can schedule an online consultation the same
-                way you would a regular one, and our team will send you the
-                necessary link to join the meeting.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                How do you charge for consultations?
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFour"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                Our consultations are charged on an hourly basis. The cost
-                depends on the type and complexity of the services required.
-                After discussing your needs, we will provide you with an
-                estimate of the time needed and the associated cost. We also
-                offer package deals for clients who need ongoing consultation.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFive"
-                aria-expanded="false"
-                aria-controls="collapseFive"
-              >
-                What should I prepare for my consultation?
-              </button>
-            </h2>
-            <div
-              id="collapseFive"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFive"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                To make the most of your consultation, it’s helpful to gather
-                relevant financial documents such as tax returns, bank
-                statements, investment portfolios, and any other documents that
-                provide insight into your current financial situation. This will
-                allow our consultants to assess your situation more accurately
-                and provide tailored advice. If you're unsure about what to
-                bring, feel free to contact us before the meeting.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <h2 class="title">Get in Touch</h2>
-        <p class="descr">
-          Fill in the form and our consultants will reach out to you.
-        </p>
-        <div class="contact-wrap">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d356.06069025342947!2d-2.244592350093826!3d53.48005991555623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d4c5226f5db%3A0xd9be143804fe6baa!2z0JzQsNC90YfQtdGB0YLQtdGALCDQktC10LvQuNC60LAg0JHRgNC40YLQsNC90ZbRjw!5e1!3m2!1suk!2spl!4v1738959113798!5m2!1suk!2spl&maptype=roadmap"
-            width="100%"
-            height="550"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-          <div class="contact-wrapper">
-            <div class="contact-info">
-              <h3>Contact Details</h3>
-              <p><strong>Address:</strong> 5 Billing Ave, Manchester, UK</p>
-              <p><strong>Phone Number:</strong> +44 20 7946 0958</p>
-              <p>
-                <strong>Email:</strong>
-                <a href="mailto:contact@wealthwise.com"
-                  >contact@wealthwise.com</a
+    <main>
+      <section class="hero">
+        <div class="swiper mySwiperHero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero-slide">
+              <div class="hero-content">
+                <h1>Развитие бизнеса в Казахстане</h1>
+                <p>
+                  Мы помогаем компаниям расти и выходить на новый уровень,
+                  предлагая экспертные решения в сфере консалтинга.
+                </p>
+                <a href="#contact" class="cookie-btn" type="button"
+                  >Связаться с нами</a
                 >
+              </div>
+              <div class="hero-media">
+                <img
+                  src="images/business-growth-kz.jpg"
+                  alt="Развитие бизнеса в Казахстане"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide hero-slide">
+              <div class="hero-content">
+                <h1>Экспертные стратегии для вашего успеха</h1>
+                <p>
+                  Наши специалисты разрабатывают индивидуальные стратегии роста,
+                  помогая вам достичь устойчивого успеха.
+                </p>
+                <a href="#contact" class="cookie-btn" type="button"
+                  >Узнать больше</a
+                >
+              </div>
+              <div class="hero-media">
+                <img src="images/strategy-kz.jpg" alt="Экспертные стратегии" />
+              </div>
+            </div>
+            <div class="swiper-slide hero-slide">
+              <div class="hero-content">
+                <h1>Инвестиции и партнёрство</h1>
+                <p>
+                  Открываем новые возможности для роста через инвестиции и
+                  стратегическое партнёрство в Казахстане.
+                </p>
+                <a href="#contact" class="cookie-btn" type="button"
+                  >Начать сотрудничество</a
+                >
+              </div>
+              <div class="hero-media">
+                <img
+                  src="images/investments-kz.jpg"
+                  alt="Инвестиции в Казахстане"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="hero-swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about-us">
+        <div>
+          <h2 class="title">Почему выбирают нас?</h2>
+          <div class="advantages-list">
+            <div class="advantage-item">
+              <img src="./images/experience.png" alt="Опыт и экспертиза" />
+              <h3>Эксперты в развитии бизнеса</h3>
+              <p>
+                Наша команда обладает глубокими знаниями и опытом в сфере
+                бизнес-консалтинга, помогая компаниям достигать роста и
+                эффективности.
               </p>
             </div>
-            <form id="contact-form" class="contact-form">
-              <div class="input-group">
-                <label for="name">Full Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  placeholder="Enter your name"
-                />
-              </div>
 
-              <div class="input-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  placeholder="Enter your email"
-                />
-              </div>
+            <div class="advantage-item">
+              <img
+                src="./images/solutions.png"
+                alt="Индивидуальные стратегии"
+              />
+              <h3>Индивидуальные стратегии развития</h3>
+              <p>
+                Мы разрабатываем персонализированные решения для бизнеса,
+                учитывая специфику казахстанского рынка и ваши цели.
+              </p>
+            </div>
 
-              <div class="input-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required />
-              </div>
-
-              <button type="submit" class="btn">Submit Request</button>
-            </form>
+            <div class="advantage-item">
+              <img src="./images/trust.png" alt="Доверие и успех" />
+              <h3>Доверие партнеров и клиентов</h3>
+              <p>
+                Наши клиенты — успешные предприниматели и компании, которые
+                добились значительных результатов благодаря нашим консультациям.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="section" id="blog">
+        <div class="container">
+          <div>
+            <h2 class="title">Новости и стратегии бизнес-развития</h2>
+            <p class="descr">
+              Следите за последними трендами в бизнесе Казахстана, изучайте
+              экспертные стратегии роста и находите новые возможности для
+              развития вашего дела.
+            </p>
+          </div>
+          <ul class="blog-list">
+            <li class="blog-post">
+              <img
+                src="./images/business-growth.jpg"
+                alt="Стратегии роста бизнеса в 2025 году"
+              />
+              <h3>Стратегии роста бизнеса в 2025 году</h3>
+              <p>
+                Узнайте, какие методы и инструменты помогут вашему бизнесу расти
+                и адаптироваться к изменяющимся условиям рынка.
+              </p>
+            </li>
+            <li class="blog-post">
+              <img
+                src="./images/kazakhstan-market.jpg"
+                alt="Особенности рынка Казахстана для предпринимателей"
+              />
+              <h3>Особенности рынка Казахстана для предпринимателей</h3>
+              <p>
+                Разбираем ключевые факторы, влияющие на бизнес в Казахстане, и
+                даем рекомендации по успешному развитию.
+              </p>
+            </li>
+            <li class="blog-post">
+              <img
+                src="./images/investment-opportunities.jpg"
+                alt="Инвестиционные возможности для малого и среднего бизнеса"
+              />
+              <h3>Инвестиционные возможности для малого и среднего бизнеса</h3>
+              <p>
+                Как привлечь инвестиции в ваш бизнес и использовать доступные
+                программы поддержки предпринимательства?
+              </p>
+            </li>
+            <li class="blog-post">
+              <img
+                src="./images/digital-transformation.jpg"
+                alt="Цифровая трансформация: будущее бизнеса"
+              />
+              <h3>Цифровая трансформация: будущее бизнеса</h3>
+              <p>
+                Как современные технологии помогают компаниям автоматизировать
+                процессы и повышать эффективность?
+              </p>
+            </li>
+            <li class="blog-post">
+              <img
+                src="./images/laws-regulations.jpg"
+                alt="Как изменения в законодательстве влияют на бизнес?"
+              />
+              <h3>Как изменения в законодательстве влияют на бизнес?</h3>
+              <p>
+                Новые правила, законы и регуляции в Казахстане: чего ожидать
+                предпринимателям?
+              </p>
+            </li>
+            <li class="blog-post">
+              <img
+                src="./images/business-networking.jpg"
+                alt="Секреты успешного бизнес-нетворкинга"
+              />
+              <h3>Секреты успешного бизнес-нетворкинга</h3>
+              <p>
+                Как находить новых партнеров, клиентов и инвесторов для роста
+                вашей компании?
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section commitment" id="commitment">
+        <div class="container">
+          <h2 class="title">Наши Принципы</h2>
+          <p class="descr">
+            В <strong>KazGrowth Consulting</strong> мы помогаем бизнесу в
+            Казахстане находить новые точки роста, разрабатывать успешные
+            стратегии и внедрять эффективные управленческие решения. Наши
+            принципы основаны на прозрачности, инновациях и стремлении к
+            устойчивому развитию.
+          </p>
+          <ul class="commitment-list">
+            <li>
+              <img src="./images/check.png" alt="check" />
+              <p>
+                <strong>Прозрачность и доверие:</strong> Открытый подход к
+                разработке стратегий и поддержка клиентов на каждом этапе
+                развития бизнеса.
+              </p>
+            </li>
+            <li>
+              <img src="./images/check.png" alt="check" />
+              <p>
+                <strong>Инновационные решения:</strong> Используем современные
+                методы аналитики и цифровые инструменты для роста и
+                масштабирования бизнеса.
+              </p>
+            </li>
+            <li>
+              <img src="./images/check.png" alt="check" />
+              <p>
+                <strong>Ориентация на результат:</strong> Мы фокусируемся на
+                достижении конкретных бизнес-целей и увеличении эффективности
+                компаний.
+              </p>
+            </li>
+            <li>
+              <img src="./images/check.png" alt="check" />
+              <p>
+                <strong>Локальная экспертиза:</strong> Глубокое понимание рынка
+                Казахстана и его особенностей позволяет разрабатывать стратегии,
+                адаптированные к реалиям страны.
+              </p>
+            </li>
+            <li>
+              <img src="./images/check.png" alt="check" />
+              <p>
+                <strong>Развитие предпринимательского сообщества:</strong>
+                Поддержка стартапов, малого и среднего бизнеса через
+                образовательные программы и консультации.
+              </p>
+            </li>
+            <li>
+              <img src="./images/check.png" alt="check" />
+              <p>
+                <strong>Долгосрочное партнёрство:</strong> Мы стремимся строить
+                прочные взаимоотношения с клиентами, помогая им достигать
+                устойчивого роста.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <h2 class="title">Наши услуги</h2>
+          <div class="services-list">
+            <div class="service-item">
+              <img
+                src="images/estrategias-inversiones-revolut.png"
+                alt="Разработка бизнес-стратегий"
+                class="service-img"
+              />
+              <h3>Разработка бизнес-стратегий</h3>
+              <p>
+                Создаем индивидуальные стратегии роста для компаний в
+                Казахстане, помогая находить новые точки роста и повышать
+                эффективность бизнеса.
+              </p>
+            </div>
+            <div class="service-item">
+              <img
+                src="images/analisis-financiero-revolut.png"
+                alt="Анализ рынка и конкурентов"
+                class="service-img"
+              />
+              <h3>Анализ рынка и конкурентов</h3>
+              <p>
+                Проводим детальный анализ рынка, выявляем сильные и слабые
+                стороны конкурентов, чтобы разработать оптимальные решения для
+                вашего бизнеса.
+              </p>
+            </div>
+            <div class="service-item">
+              <img
+                src="images/business-optimization.png"
+                alt="Оптимизация бизнес-процессов"
+                class="service-img"
+              />
+              <h3>Оптимизация бизнес-процессов</h3>
+              <p>
+                Помогаем внедрять эффективные процессы, автоматизировать
+                операции и снижать затраты для устойчивого развития компании.
+              </p>
+            </div>
+            <div class="service-item">
+              <img
+                src="images/gestion-proyectos-revolut.png"
+                alt="Консалтинг по инвестициям"
+                class="service-img"
+              />
+              <h3>Консалтинг по инвестициям</h3>
+              <p>
+                Подбираем лучшие инвестиционные возможности, помогаем привлекать
+                финансирование и выстраивать стратегии масштабирования бизнеса.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="investmentChart">
+        <h2 class="title">
+          Инвестиции в развитие бизнеса в Казахстане и Прогнозы Рынка
+        </h2>
+        <p class="descr">
+          Эта секция представляет общий объем инвестиций в развитие бизнеса в
+          Казахстане, а также прогнозы по росту ключевых секторов и трендам на
+          рынке. Мы анализируем не только изменения в экономике страны, но и
+          развитие новых бизнес-инициатив и возможностей для инвесторов в
+          Казахстане.
+        </p>
+        <div class="container"><canvas id="businessGrowthChart"></canvas></div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h2 class="title">
+            Нас рекомендуют тысячи довольных клиентов по всему Казахстану
+          </h2>
+          <p class="descr">
+            Ознакомьтесь с историями наших клиентов, которые доверились
+            KazGrowth Consulting для развития бизнеса и улучшения своих
+            результатов на казахстанском рынке.
+          </p>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonials-slide">
+                <div class="testimonials-wrap">
+                  <img src="./images/client-1.jpg" alt="клиент" />
+                  <div class="testimonials-wrapper">
+                    <h3 class="testimonials-name">Алия Нурмаганбетова</h3>
+                    <p class="testimonials-location">Алматы, Казахстан</p>
+                  </div>
+                </div>
+                <p class="testimonials-response">
+                  “KazGrowth Consulting помогли нам выстроить успешную стратегию
+                  для расширения бизнеса в Казахстане. Благодаря их
+                  профессионализму, мы увеличили оборот на 40%.”
+                </p>
+              </div>
+              <div class="swiper-slide testimonials-slide">
+                <div class="testimonials-wrap">
+                  <img src="./images/client-5.jpg" alt="клиент" />
+                  <div class="testimonials-wrapper">
+                    <h3 class="testimonials-name">Серикжан Тулегенов</h3>
+                    <p class="testimonials-location">Шымкент, Казахстан</p>
+                  </div>
+                </div>
+                <p class="testimonials-response">
+                  “Благодаря консультациям KazGrowth Consulting я смог успешно
+                  вывести свой бизнес на новый уровень, расширив рынок в
+                  Казахстане.”
+                </p>
+              </div>
+
+              <div class="swiper-slide testimonials-slide">
+                <div class="testimonials-wrap">
+                  <img src="./images/client-3.jpg" alt="клиент" />
+                  <div class="testimonials-wrapper">
+                    <h3 class="testimonials-name">Айдана Жамалбекова</h3>
+                    <p class="testimonials-location">Астана, Казахстан</p>
+                  </div>
+                </div>
+                <p class="testimonials-response">
+                  “Работа с KazGrowth Consulting была решающим шагом в развитии
+                  моего бизнеса. Их глубокое понимание рынка Казахстана помогло
+                  мне выстроить эффективную стратегию.”
+                </p>
+              </div>
+
+              <div class="swiper-slide testimonials-slide">
+                <div class="testimonials-wrap">
+                  <img src="./images/client-2.jpg" alt="клиент" />
+                  <div class="testimonials-wrapper">
+                    <h3 class="testimonials-name">Бауржан Сулейменов</h3>
+                    <p class="testimonials-location">Караганда, Казахстан</p>
+                  </div>
+                </div>
+                <p class="testimonials-response">
+                  “KazGrowth Consulting стали нашими настоящими партнерами в
+                  процессе роста бизнеса в Казахстане. Их опыт в развитии
+                  бизнеса неоценим.”
+                </p>
+              </div>
+              <div class="swiper-slide testimonials-slide">
+                <div class="testimonials-wrap">
+                  <img src="./images/client-4.jpg" alt="клиент" />
+                  <div class="testimonials-wrapper">
+                    <h3 class="testimonials-name">Гульнар Токмагамбетова</h3>
+                    <p class="testimonials-location">Тараз, Казахстан</p>
+                  </div>
+                </div>
+                <p class="testimonials-response">
+                  “С помощью KazGrowth Consulting я смогла значительно улучшить
+                  свою бизнес-стратегию в Казахстане и достичь отличных
+                  результатов.”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination-wrap">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-buttons">
+              <div class="swiper-button-prev">
+                <svg
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  width="20"
+                  height="18"
+                  viewBox="0 0 20 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="title">Связаться с нами</h2>
+          <p class="descr">
+            Заполните форму, и наши консультанты свяжутся с вами.
+          </p>
+          <div class="contact-wrap">
+            <div class="contact-wrapper">
+              <div class="contact-info">
+                <h3>Контактные данные</h3>
+                <p>
+                  <strong>Адрес:</strong> ул. Тимирязева 52, 010000 Нур-Султан,
+                  Казахстан
+                </p>
+                <p><strong>Телефон:</strong> +7 777 123 4567</p>
+                <p>
+                  <strong>Email:</strong>
+                  <a href="mailto:contact@kazgrowth.com"
+                    >contact@kazgrowth.com</a
+                  >
+                </p>
+              </div>
+              <form id="contact-form" class="contact-form">
+                <div class="input-group">
+                  <label for="name">Полное имя</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Введите ваше имя"
+                  />
+                </div>
+
+                <div class="input-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Введите ваш email"
+                  />
+                </div>
+
+                <div class="input-group">
+                  <label for="phone">Номер телефона</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  Отправить запрос
+                </button>
+              </form>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.511548375225!2d71.41061477702254!3d51.19122507174316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424580caa5f54e91%3A0x9a74f07af5165209!2z0KvQsdGL0YDQsNC5INCQ0LvRgtGL0L3RgdCw0YDRi9C9INC606nRiNC10YHRliA1Miwg0JDRgdGC0LDQvdCwIDAyMDAwMCwg0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1suk!2spl!4v1740210553918!5m2!1suk!2spl"
+              width="100%"
+              height="550"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
           <a href="index.html">
-            <img src="images/logo.png" alt="Company Logo" />
+            <img src="images/logo.png" alt="Логотип компании" />
           </a>
         </div>
 
         <nav class="footer-nav">
           <ul>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="terms-of-use.html">Terms of Use</a></li>
-            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="investment-opportunities.html">Инвестиции</a></li>
+            <li>
+              <a href="case-studies.html">Кейсы</a>
+            </li>
+            <li>
+              <a href="our-services.html">Наши услуги</a>
+            </li>
+            <li>
+              <a href="about-us.html">О нас</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="privacy-policy.html">Политика конфиденциальности</a>
+            </li>
+            <li><a href="terms-of-use.html">Условия использования</a></li>
+            <li>
+              <a href="cookie-policy.html">Политика использования cookie</a>
+            </li>
           </ul>
         </nav>
 
         <div class="footer-contact">
-          <p>📞 +44 20 7946 0958 (UK)</p>
+          <p>
+            <strong>📍 Адрес:</strong> ул. Тимирязева 52, 010000 Нур-Султан,
+            Казахстан
+          </p>
+          <p><strong>📞 Телефон:</strong> +7 777 123 4567</p>
+          <p>
+            <strong>📧 Email:</strong>
+            <a href="mailto:contact@kazgrowth.com">contact@kazgrowth.com</a>
+          </p>
         </div>
       </div>
 
-      <p class="footer-rights">© 2025 All rights reserved.</p>
+      <div class="footer-wrap">
+        <p class="footer-right">
+          © 2025 KazGrowth Consulting. Все права защищены.
+        </p>
+        <p class="footer-warning">
+          Внимание: Инвестиции всегда связаны с рисками. Прошлые результаты не
+          гарантируют будущей прибыли. Перед принятием инвестиционных решений
+          рекомендуется проконсультироваться с профессиональными финансовыми
+          консультантами.
+        </p>
+      </div>
     </footer>
 
     <div id="cookie-popup" class="cookie-popup">
       <div class="cookie-popup-content">
         <p>
-          We use cookies to ensure you get the best experience on our website.
-          By continuing, you agree to our use of cookies.
+          Мы используем файлы cookie, чтобы обеспечить вам наилучшие впечатления
+          от использования нашего веб-сайта. наш сайт. Продолжая просмотр, вы
+          соглашаетесь на использование файлов cookie.
         </p>
-        <button id="accept-cookie" class="cookie-btn">Accept</button>
+        <button id="accept-cookie" class="cookie-btn">Принять</button>
       </div>
     </div>
 
-    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/schedule.js"></script>
   </body>
 </html>

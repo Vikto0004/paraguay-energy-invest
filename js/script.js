@@ -1,12 +1,40 @@
 const phoneInput = document.querySelector("#phone");
 const faqTitles = document.querySelectorAll(".faq-title");
 
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const swiperHero = new Swiper(".mySwiperHero", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".hero-swiper-pagination",
+    clickable: true,
+  },
+  speed: 1600,
+});
+
 intlTelInput(phoneInput, {
   initialCountry: "auto",
   geoIpLookup: (callback) => {
-    fetch("https://ipapi.co/json")
+    fetch("https://ipinfo.io/json")
       .then((res) => res.json())
-      .then((data) => callback(data.country_code))
+      .then((data) => callback(data.country))
       .catch(() => callback("us"));
   },
   utilsScript:
