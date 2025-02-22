@@ -1,5 +1,4 @@
 const phoneInput = document.querySelector("#phone");
-const faqTitles = document.querySelectorAll(".faq-title");
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
@@ -42,13 +41,6 @@ intlTelInput(phoneInput, {
 });
 phoneInput.classList.add("iti");
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    window.location.href = "thank-you.html";
-  });
-
 setTimeout(function () {
   const cookiePopup = document.getElementById("cookie-popup");
   cookiePopup.style.display = "flex";
@@ -65,15 +57,3 @@ document.getElementById("accept-cookie").addEventListener("click", function () {
 if (document.cookie.indexOf("cookieAccepted=true") !== -1) {
   document.getElementById("cookie-popup").style.display = "none";
 }
-
-faqTitles.forEach((title) => {
-  title.addEventListener("click", () => {
-    const content = title.nextElementSibling;
-
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-});
