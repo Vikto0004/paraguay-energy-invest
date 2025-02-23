@@ -1,4 +1,4 @@
-const phoneInput = document.querySelector("#phone");
+// const phoneInput = document.querySelector("#phone");
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
@@ -28,18 +28,18 @@ const swiperHero = new Swiper(".mySwiperHero", {
   speed: 1600,
 });
 
-intlTelInput(phoneInput, {
-  initialCountry: "auto",
-  geoIpLookup: (callback) => {
-    fetch("https://ipinfo.io/json")
-      .then((res) => res.json())
-      .then((data) => callback(data.country))
-      .catch(() => callback("us"));
-  },
-  utilsScript:
-    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.min.js",
-});
-phoneInput.classList.add("iti");
+// intlTelInput(phoneInput, {
+//   initialCountry: "auto",
+//   geoIpLookup: (callback) => {
+//     fetch("https://ipinfo.io/json")
+//       .then((res) => res.json())
+//       .then((data) => callback(data.country))
+//       .catch(() => callback("us"));
+//   },
+//   utilsScript:
+//     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.min.js",
+// });
+// phoneInput.classList.add("iti");
 
 setTimeout(function () {
   const cookiePopup = document.getElementById("cookie-popup");
