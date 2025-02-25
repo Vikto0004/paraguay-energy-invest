@@ -3,9 +3,10 @@ html {
 }
 
 body {
-  background-color: #f8f9fa;
+  background: #fff;
   margin: 0;
   width: 100%;
+  font-family: "Times New Roman", Times, serif;
 }
 
 :root {
@@ -15,6 +16,7 @@ body {
   --hover-btn: #5a5e32cc;
   --text-btn: #ffffffff;
   --accordion-active: #5a5e3277;
+  --background: #f3f4f6ff;
 }
 
 /* Reset styles */
@@ -51,10 +53,12 @@ img {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   color: var(--text);
   margin-bottom: 35px;
   text-align: center;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .subtitle {
@@ -62,6 +66,7 @@ img {
   font-size: 1.4rem;
   color: var(--text);
   margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .descr {
@@ -70,6 +75,7 @@ img {
   text-align: center;
   max-width: 900px;
   margin: 0 auto 30px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .section {
@@ -92,6 +98,7 @@ img {
   border-color: var(--accept-color);
   font-size: 16px;
   transition: all 0.3s ease;
+  border-radius: 25px;
 }
 
 .button:hover {
@@ -104,20 +111,15 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--text);
+  background-color: var(--text-btn);
   backdrop-filter: blur(10px);
-  padding: 13px 60px;
-  position: relative;
-}
-
-.header::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: var(--secondery-color);
+  padding: 13px 20px;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  right: 20px;
+  z-index: 999;
+  border-radius: 40px;
 }
 
 .header-logo {
@@ -140,7 +142,7 @@ img {
 
 .header-nav {
   display: flex;
-  gap: 150px;
+  gap: 300px;
 }
 
 .header-nav-list {
@@ -168,12 +170,12 @@ img {
 
 /* Hero styles */
 .hero {
-  padding: 100px 0;
+  padding: 0 0 100px;
   position: relative;
   color: var(--secondery-color);
   display: flex;
-  gap: 60px;
-  justify-content: center;
+  gap: 30px;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   overflow: hidden;
@@ -181,14 +183,15 @@ img {
 
 .hero-content {
   text-align: start;
-  max-width: 700px;
+  max-width: 680px;
   width: 100%;
 }
 
 .hero h1 {
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .hero h1 span {
@@ -202,19 +205,35 @@ img {
   max-width: 600px;
 }
 
+.hero .descr {
+  text-align: start;
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+
+.hero .button {
+  margin-left: 20px;
+  font-size: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .hero-media {
-  max-width: 600px;
+  max-width: 1000px;
   width: 100%;
+  height: 100vh;
 }
 
 .hero-media img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 /* Advantages section */
 .about-us {
+  background-color: var(--background);
   padding-bottom: 140px;
 }
 .advantages {
@@ -234,6 +253,7 @@ img {
   gap: 30px;
   max-width: 1300px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .advantage-item {
@@ -242,17 +262,15 @@ img {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .advantage-item img {
-  width: 100%;
-  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
   margin-bottom: 15px;
 }
 
@@ -260,16 +278,30 @@ img {
   font-size: 1.4rem;
   color: var(--text);
   margin-bottom: 10px;
+  text-align: start;
+  padding-left: 10px;
 }
 
 .advantage-item p {
   font-size: 1rem;
   color: #666;
+  text-align: start;
+  padding-left: 10px;
 }
 
-.advantage-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+.advantages-sec-list {
+  display: flex;
+}
+
+.advantages-sec-list .advantage-item img {
+  width: 100%;
+  border-radius: 25px;
+  height: auto;
+}
+
+.advantages-sec-list .advantage-item {
+  max-width: 330px;
+  align-items: start;
 }
 
 /* Blog styles */
@@ -346,6 +378,25 @@ img {
   text-align: start;
 }
 
+.this-course-list {
+  display: grid;
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.this-course-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.this-course-list img {
+  width: 20px;
+  object-fit: cover;
+}
+
 /* === Join Us === */
 
 .join-us .container {
@@ -420,7 +471,7 @@ img {
 
 .input-group {
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .input-group label {
@@ -434,9 +485,10 @@ img {
 .input-group input {
   width: 100%;
   padding: 12px;
+  padding-left: 20px;
   background-color: transparent;
-  border: none;
-  border-bottom: 1px solid var(--primery-color);
+  border: 1px solid var(--primery-color);
+  border-radius: 20px !important;
   font-size: 1rem;
 }
 
@@ -543,11 +595,23 @@ input:focus {
   padding: 40px 0 60px;
 }
 
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 button.accordion-button:not(.collapsed) {
   color: var(--text);
   background-color: var(--accordion-active);
   border: none;
   box-shadow: none;
+}
+
+.accordion-header,
+.accordion-button,
+.accordion-item {
+  border-radius: 25px !important;
 }
 
 button.accordion-button:focus,
