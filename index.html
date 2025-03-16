@@ -1,458 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NextGenAI</title>
-    <link rel="icon" href="/images/logo.png" type="image/png" />
+    <title>AI Proceso+</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
-      <a href="./index.html" class="logo">
-        <img class="logo-img" src="./images/logo.png" alt="logo" />
-        NextGen<span>AI</span></a
+      <a class="logo" href="./index.html"
+        ><img src="./images/logo.png" alt="logo AI Proceso+" />AI Proceso+</a
       >
-      <nav>
-        <ul class="header-nav-list">
-          <li><a class="header-nav-link" href="./index.html">Home</a></li>
-          <li>
-            <a class="header-nav-link" href="./index.html#about">About</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="./index.html#why-choose-us"
-              >Why Choose Us</a
-            >
-          </li>
-          <li>
-            <a class="header-nav-link" href="./index.html#our-project"
-              >Our Projects</a
-            >
-          </li>
-          <li>
-            <a class="header-nav-link" href="#./index.html#testimonials"
-              >Testimonials</a
-            >
-          </li>
-          <li><a class="header-nav-link" href="#./index.htmlblog">Blog</a></li>
-          <li>
-            <a class="primary-btn" href="./index.html#contact">Contact Us</a>
-          </li>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="./index.html#about-us">Sobre Nosotros</a></li>
+          <li><a href="./index.html#services">Servicios</a></li>
+          <li><a href="./index.html#portfolio">Portafolio</a></li>
+          <li><a href="./index.html#faq">FAQ</a></li>
         </ul>
+        <a class="primary-btn" href="./index.html#contact">Contacto</a>
       </nav>
     </header>
+
     <main>
       <section class="hero">
-        <div class="hero-container">
-          <h1 class="hero-title">Stay Ahead with NextGenAI</h1>
-          <p class="hero-descr">
-            Discover the latest advancements in AI technology, research, and
-            applications. Stay informed and ahead of the curve with NextGenAI.
-          </p>
-          <div class="buttons-wrap">
-            <a class="primary-btn" href="#contact">Join Us</a>
-            <a class="secondary-btn" href="#our-services">Learn More</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-us" id="about">
         <div class="container">
-          <div class="about-us-img-wrap rectangle">
-            <img class="image" src="./images/about-us-ai.jpg" alt="About Us" />
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                ¡Eleva tus creaciones con tecnología impulsada por IA!
+              </h1>
+              <p class="descr">
+                Desde la generación de algoritmos complejos hasta herramientas
+                simples impulsadas por IA, ofrecemos tecnología de vanguardia.
+              </p>
+              <ul class="hero-list">
+                <li>Flujo de trabajo con herramientas personalizadas de IA</li>
+                <li>578M +<span>Usuarios Activos</span></li>
+                <li>123.4+<span>Tecnología</span></li>
+              </ul>
+              <ul class="hero-btn">
+                <li>
+                  <button
+                    onclick="window.location.href='index.html#contact'"
+                    class="primary-btn"
+                  >
+                    Leer Más
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onclick="window.location.href='index.html#contact'"
+                    class="secondary-btn"
+                  >
+                    Aprender Más
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <img class="hero-img" src="./images/hero.jpg" alt="Robot de IA" />
+            <div class="hero-left-circle"></div>
+            <div class="hero-right-circle"></div>
           </div>
-          <div class="about-us-wrap">
-            <p class="section-name">/About Us</p>
-            <h2 class="title">Your Trusted Source for AI Insights</h2>
-            <p class="descr">
-              At NextGenAI, we are dedicated to providing you with the most
-              up-to-date information on AI technologies, research breakthroughs,
-              and practical applications. Our team of experts analyzes trends
-              and developments to help you stay informed and make better
-              decisions in the world of AI.
-            </p>
-            <ul class="about-us-list">
-              <li>
-                <h3><span>+</span>500</h3>
-                <p>Articles Published</p>
-              </li>
-              <li>
-                <h3>10<span>Y</span></h3>
-                <p>Experience in AI</p>
-              </li>
-              <li>
-                <h3><span>+</span>1000</h3>
-                <p>Satisfied Readers</p>
-              </li>
+          <div class="hero-bottom">
+            <div class="hero-bottom-left">
+              <h3>12+</h3>
+              <p>Experiencia Digital</p>
+            </div>
+            <img
+              src="./images/artificial-intelligence-new-technology.jpg"
+              alt="nueva tecnología de inteligencia artificial"
+              class="hero-bottom-img"
+            />
+            <ul class="hero-bottom-right">
+              <li>Transforma Ideas en Realidad</li>
+              <li>El Poder de la IA a tu Alcance</li>
+              <li>Socio de IA para una Mayor Inteligencia</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="our-services" id="our-services">
+      <section class="about-us" id="about-us">
         <div class="container">
-          <div class="our-services-wrap">
-            <p class="section-name">/Our Services</p>
-            <h2 class="title">Comprehensive AI Insights</h2>
+          <h2 class="title">
+            Revoluciona tu flujo de trabajo con herramientas personalizadas de
+            IA
+          </h2>
+          <div class="about-us-wrapper">
+            <h3>Construye de manera más inteligente con generadores de IA</h3>
+            <ul>
+              <li>Simplificando la IA para Todos</li>
+              <li>Creaciones con Tecnología Impulsada por IA</li>
+            </ul>
+            <p>
+              Desde la generación de algoritmos complejos hasta herramientas
+              simples impulsadas por IA, ofrecemos tecnología de vanguardia.
+            </p>
           </div>
-          <div class="buttons-wrap">
-            <a class="primary-btn" href="#contact">Join Us</a>
+          <h2 class="title">
+            Tu socio de IA para soluciones más inteligentes y rápidas
+          </h2>
+          <div class="about-us-content">
+            <div class="about-us-content-left">
+              <h3>Flujo de trabajo con herramientas personalizadas de IA</h3>
+              <p>
+                Nuestro sitio web de generadores de IA empodera a individuos y
+                empresas.
+              </p>
+              <img
+                src="./images/ai-for-business-tools.jpg"
+                alt="herramientas de IA para negocios"
+              />
+              <ul class="about-us-list">
+                <li>123.4+ <span>Tecnología</span></li>
+                <li>Descubre el Futuro de la Innovación en IA</li>
+              </ul>
+              <ul class="about-us-btn">
+                <li>
+                  <button
+                    onclick="window.location.href='index.html#contact'"
+                    class="primary-btn"
+                  >
+                    Leer Más
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onclick="window.location.href='index.html#contact'"
+                    class="secondary-btn"
+                  >
+                    Aprender Más
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="about-us-content-right">
+              <img src="./images/ai-technology.jpg" alt="tecnología de IA" />
+              <div class="about-us-content-right-text top">
+                <h3>Tecnología de Visión IA</h3>
+                <p>
+                  Nuestro sitio web de generadores de IA empodera a individuos
+                </p>
+              </div>
+              <div class="about-us-content-right-text bottom">
+                <h3>Tecnología de Visión IA</h3>
+                <p>
+                  Nuestro sitio web de generadores de IA empodera a individuos
+                </p>
+              </div>
+            </div>
           </div>
-          <ul class="our-services-list">
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services-content">
+            <h2 class="title">Descubre el Futuro de la Innovación en IA</h2>
+            <p class="descr">
+              Desde la generación de algoritmos complejos hasta herramientas
+              simples impulsadas por IA, ofrecemos soluciones de vanguardia que
+              satisfacen todas las necesidades. Ya seas un desarrollador,
+              emprendedor
+            </p>
+          </div>
+          <div class="hero-right-circle"></div>
+          <div class="services-wrapper">
+            <img
+              class="services-wrapper-img"
+              src="./images/ai-innovation.jpg"
+              alt="innovación en IA"
+            />
+            <div class="services-wrapper-content">
+              <div>
+                <ul class="services-list">
+                  <li>Simplificando la IA para Todos</li>
+                  <li>Plataforma de Generadores de IA</li>
+                </ul>
+                <h3>Empodera tu Visión con Tecnología de IA</h3>
+                <p>
+                  Desde la generación de algoritmos complejos hasta herramientas
+                  simples impulsadas por IA, ofrecemos soluciones de vanguardia
+                  que satisfacen todas las necesidades.
+                </p>
+              </div>
+              <img src="./images/ai-future.jpg" alt="futuro de la IA" />
+            </div>
+            <div class="services-wrapper-bottom">
+              <img src="./images/activity-zone.png" alt="zona de actividad" />
+              <div class="services-wrapper-bottom-content">
+                <h3>
+                  Innova Más Rápido con Nuestra Plataforma de Generadores de IA
+                </h3>
+                <p>
+                  Desde la generación de algoritmos complejos hasta herramientas
+                  simples impulsadas por IA, ofrecemos tecnología de vanguardia.
+                </p>
+              </div>
+              <div class="services-wrapper-bottom-right">
+                <h3>12+</h3>
+                <p>Experiencia Digital</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="title">
+            Transforma Ideas en Realidad con Soluciones de IA de Vanguardia
+          </h2>
+          <ul class="portfolio-list">
             <li>
-              <img src="./images/news.png" alt="AI News" />
-              <h3 class="subtitle">AI News</h3>
-              <p>
-                Stay updated with the latest news and developments in the world
-                of AI.
-              </p>
+              <img
+                src="./images/ai-robot-with-computer.jpg"
+                alt="robot de IA con computadora"
+              />
+            </li>
+            <li><img src="./images/brain-ai.jpg" alt="cerebro IA" /></li>
+            <li>
+              <img
+                src="./images/artificial-robot-thinking-brain.jpg"
+                alt="robot artificial pensando cerebro"
+              />
             </li>
             <li>
-              <img src="./images/research.png" alt="AI Research" />
-              <h3 class="subtitle">AI Research</h3>
-              <p>
-                Explore in-depth research articles and papers on cutting-edge AI
-                technologies.
-              </p>
-            </li>
-            <li>
-              <img src="./images/applications.png" alt="AI Applications" />
-              <h3 class="subtitle">AI Applications</h3>
-              <p>
-                Learn about practical applications of AI in various industries.
-              </p>
-            </li>
-            <li>
-              <img src="./images/trends.png" alt="AI Trends" />
-              <h3 class="subtitle">AI Trends</h3>
-              <p>
-                Discover the latest trends and future directions in AI
-                technology.
-              </p>
-            </li>
-            <li>
-              <img src="./images/tools.png" alt="AI Tools" />
-              <h3 class="subtitle">AI Tools</h3>
-              <p>
-                Find out about the best tools and resources for AI development
-                and research.
-              </p>
-            </li>
-            <li>
-              <img src="./images/community.png" alt="AI Community" />
-              <h3 class="subtitle">AI Community</h3>
-              <p>
-                Connect with other AI enthusiasts and professionals in our
-                community.
-              </p>
+              <img src="./images/ai-for-people.jpg" alt="IA para personas" />
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="trigger">
+      <section class="faq-section" id="faq">
         <div class="container">
-          <h2 class="title">Ready to Dive into AI? Join Us Today.</h2>
-          <p class="descr">
-            Stay informed and ahead of the curve with NextGenAI. Join our
-            community and start exploring the world of AI today.
-          </p>
-          <div class="buttons-wrap">
-            <a class="primary-btn" href="#contact">Join Us</a>
-            <a class="secondary-btn" href="#our-services">Learn More</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="why-choose" id="why-choose">
-        <div class="container">
-          <div class="rectangle">
-            <img
-              src="./images/why-choose-ai.jpg"
-              class="image"
-              alt="Why Choose Us"
-            />
-          </div>
-          <div class="why-choose-wrap">
-            <p class="section-name">/Why Choose Us</p>
-            <h2 class="title">Unmatched Quality and Expertise</h2>
-            <p class="descr">
-              At NextGenAI, we pride ourselves on delivering high-quality,
-              reliable information on AI technologies. Our team of experts
-              ensures that you receive the most accurate and up-to-date
-              insights.
-            </p>
-            <ul class="why-choose-list">
-              <li>
-                <img src="./images/check.png" alt="check" />
-                <p>Over 10 years of experience in AI</p>
-              </li>
-              <li>
-                <img src="./images/check.png" alt="check" />
-
-                <p>500+ articles published</p>
-              </li>
-              <li>
-                <img src="./images/check.png" alt="check" />
-
-                <p>Trusted by thousands of readers</p>
-              </li>
-            </ul>
-          </div>
-          <div class="why-choose-wrap">
-            <h2 class="title">Empowering You with AI Knowledge</h2>
-            <p class="descr">
-              Our mission is to empower you with the knowledge and tools you
-              need to succeed in the world of AI. Whether you're a beginner or
-              an expert, NextGenAI has something for you.
-            </p>
-            <ul class="why-wrap-list">
-              <li>
-                <h3><span>+</span>1000</h3>
-                <p>Satisfied Readers</p>
-              </li>
-              <li>
-                <h3>100<span>%</span></h3>
-                <p>Quality Content</p>
-              </li>
-            </ul>
-          </div>
-          <div class="rectangle">
-            <img
-              class="image"
-              src="./images/why-choose-ai-2.jpg"
-              alt="Why Choose Us"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="our-project" id="our-project">
-        <div class="container">
-          <p class="section-name">/Featured Articles</p>
-          <div class="our-project-wrap">
-            <h2 class="title">Our Articles Speak for Themselves</h2>
-            <div class="buttons-wrap">
-              <a class="primary-btn" href="#contact">Join Us</a>
-              <a class="secondary-btn" href="#our-services">Learn More</a>
-            </div>
-          </div>
-          <div class="swiper our-project-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide our-project-slide">
-                <img
-                  src="./images/ai-in-healthcare.jpg"
-                  alt="AI in Healthcare"
-                />
-                <div class="our-project-wrapper">
-                  <h3 class="subtitle">AI in Healthcare</h3>
-                  <p class="descr">
-                    Explore how AI is revolutionizing the healthcare industry
-                    with innovative solutions and improved patient care.
-                  </p>
-                  <div class="our-project-line"></div>
-                  <p class="our-project-type">Healthcare</p>
-                </div>
+          <h2 class="title">Preguntas Frecuentes</h2>
+          <div class="accordion" id="faqAccordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link faq-btn"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    ¿Por qué elegir AI Proceso+?
+                  </button>
+                </h2>
               </div>
-              <div class="swiper-slide our-project-slide">
-                <img src="./images/ai-in-finance.jpg" alt="AI in Finance" />
-                <div class="our-project-wrapper">
-                  <h3 class="subtitle">AI in Finance</h3>
-                  <p class="descr">
-                    Discover the impact of AI on the financial sector, from
-                    automated trading to fraud detection.
-                  </p>
-                  <div class="our-project-line"></div>
-                  <p class="our-project-type">Finance</p>
-                </div>
-              </div>
-              <div class="swiper-slide our-project-slide">
-                <img src="./images/ai-in-education.jpg" alt="AI in Education" />
-                <div class="our-project-wrapper">
-                  <h3 class="subtitle">AI in Education</h3>
-                  <p class="descr">
-                    Learn how AI is transforming education with personalized
-                    learning experiences and advanced teaching tools.
-                  </p>
-                  <div class="our-project-line"></div>
-                  <p class="our-project-type">Education</p>
-                </div>
-              </div>
-              <div class="swiper-slide our-project-slide">
-                <img
-                  src="./images/ai-in-transportation.jpg"
-                  alt="AI in Transportation"
-                />
-                <div class="our-project-wrapper">
-                  <h3 class="subtitle">AI in Transportation</h3>
-                  <p class="descr">
-                    Understand the role of AI in shaping the future of
-                    transportation with autonomous vehicles and smart traffic
-                    management.
-                  </p>
-                  <div class="our-project-line"></div>
-                  <p class="our-project-type">Transportation</p>
-                </div>
-              </div>
-              <div class="swiper-slide our-project-slide">
-                <img src="./images/ai-in-retail.jpg" alt="AI in Retail" />
-                <div class="our-project-wrapper">
-                  <h3 class="subtitle">AI in Retail</h3>
-                  <p class="descr">
-                    Explore how AI is enhancing the retail experience with
-                    personalized recommendations and efficient supply chain
-                    management.
-                  </p>
-                  <div class="our-project-line"></div>
-                  <p class="our-project-type">Retail</p>
-                </div>
-              </div>
-              <div class="swiper-slide our-project-slide">
-                <img
-                  src="./images/ai-in-manufacturing.jpg"
-                  alt="AI in Manufacturing"
-                />
-                <div class="our-project-wrapper">
-                  <h3 class="subtitle">AI in Manufacturing</h3>
-                  <p class="descr">
-                    Discover how AI is optimizing manufacturing processes with
-                    predictive maintenance and quality control.
-                  </p>
-                  <div class="our-project-line"></div>
-                  <p class="our-project-type">Manufacturing</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="our-project-navigation">
-            <div class="project-swiper-button-prev">
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 20 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#faqAccordion"
               >
-                <path
-                  d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
-                  fill="white"
-                />
-              </svg>
+                <div class="card-body">
+                  AI Proceso+ proporciona consultas expertas sobre el desarrollo
+                  de negocios en España. Ofrecemos estrategias individuales y
+                  apoyo en cada etapa.
+                </div>
+              </div>
             </div>
-            <div class="project-swiper-button-next">
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 20 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed faq-btn"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    ¿Qué servicios ofrecen?
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#faqAccordion"
               >
-                <path
-                  d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
-                  fill="white"
-                />
-              </svg>
+                <div class="card-body">
+                  Ofrecemos una amplia gama de servicios, incluyendo el
+                  desarrollo de estrategias de crecimiento, consultas y apoyo,
+                  consejos y recomendaciones, así como acompañamiento legal en
+                  transacciones.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed faq-btn"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    ¿Cómo obtener una consulta?
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#faqAccordion"
+              >
+                <div class="card-body">
+                  Para obtener una consulta, contáctenos a través del formulario
+                  en nuestro sitio web o llame al número indicado. Siempre
+                  estamos encantados de ayudarle.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="contact" id="contact">
+      <section class="contact-section" id="contact">
         <div class="container">
-          <h2 class="title">Contact Us</h2>
-          <p class="descr">
-            Fill in the form and our consultants will reach out to you.
-          </p>
-          <div class="contact-wrap">
-            <div class="contact-wrapper">
-              <div class="contact-info">
-                <h3>Contact Details</h3>
-                <p>
-                  <strong>Address:</strong> 239 Nepean St, Ottawa, ON K2P 0B7,
-                  Canada
-                </p>
-                <p><strong>Phone Number:</strong> +1 613 4210 504</p>
-                <p>
-                  <strong>Email:</strong>
-                  <a href="mailto:info@nextgenai.ca">info@nextgenai.ca</a>
-                </p>
-              </div>
-              <form id="contact-form" class="contact-form">
-                <div class="input-group">
-                  <label for="name">Full Name</label>
+          <h2 class="title">Contáctenos</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Datos de Contacto</h3>
+              <p><strong>Teléfono:</strong> +34 915 601 152</p>
+              <p>
+                <strong>Dirección:</strong> C. del Marqués de Jura Real, 20,
+                Carabanchel, 28019 Madrid
+              </p>
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:info@aiproceso.es">info@aiproceso.es</a>
+              </p>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1382.3470206627462!2d-3.711257508935846!3d40.39197644075606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCalle%20de%20la%20Paz%2C%2010%2C%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2ses!4v1741946387176!5m2!1ses!2ses"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="contact-map"
+              ></iframe>
+            </div>
+            <div class="contact-form">
+              <h3>Envíenos un mensaje</h3>
+              <form action="thank-you.html" method="POST">
+                <div class="form-group">
+                  <label for="first-name">Nombre</label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
+                    id="first-name"
+                    name="first-name"
                     required
-                    placeholder="Enter your name"
-                    pattern="[A-Za-z\s]{1,50}"
-                    title="Name should only contain letters and spaces, and be up to 50 characters long."
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}"
+                    title="El nombre debe contener al menos 2 letras"
                   />
                 </div>
-
-                <div class="input-group">
+                <div class="form-group">
+                  <label for="last-name">Apellido</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}"
+                    title="El apellido debe contener al menos 2 letras"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    pattern="\+?[0-9\s\-\(\)]{7,}"
+                    title="Ingrese un número de teléfono válido"
+                  />
+                </div>
+                <div class="form-group">
                   <label for="email">Email</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
-                    placeholder="Enter your email"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    title="Please enter a valid email address."
+                    title="Ingrese una dirección de email válida"
                   />
                 </div>
-
-                <div class="input-group">
-                  <label for="phone">Phone Number</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    placeholder="Enter your phone number"
-                    pattern="\+?[0-9\s\-]{7,15}"
-                    title="Phone number should be between 7 and 15 digits and can include spaces, dashes, and an optional leading +."
-                  />
-                </div>
-
-                <button type="submit" class="submit-btn">Submit Request</button>
+                <button type="submit" class="primary-btn">Enviar</button>
               </form>
             </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175.03954255668785!2d-75.69965461701683!3d45.416746188586515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0453478ac95f%3A0x6baf6b72704748d3!2zMjM5IE5lcGVhbiBTdCwgT3R0YXdhLCBPTiBLMlAgMEI3LCDQmtCw0L3QsNC00LA!5e0!3m2!1suk!2spl!4v1742130709630!5m2!1suk!2spl"
-              width="100%"
-              height="550"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
         </div>
       </section>
@@ -460,31 +418,52 @@
 
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo">
-          <img class="logo-img" src="./images/logo.png" alt="logo" />
-          NextGen<span>AI</span></a
-        >
-        <ul class="header-nav-list">
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-of-use.html">Terms of Use</a></li>
-          <li><a href="cookie-policy.html">Cookie Policy</a></li>
-        </ul>
+        <div class="footer-menu">
+          <p>Menú</p>
+          <ul>
+            <li><a href="./index.html#about-us">Sobre Nosotros</a></li>
+            <li><a href="./index.html#services">Servicios</a></li>
+            <li><a href="./index.html#portfolio">Portafolio</a></li>
+            <li><a href="./index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <p>Páginas de Servicio</p>
+          <ul>
+            <li><a href="./cookie-policy.html">Política de Cookies</a></li>
+            <li><a href="./privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="./terms-of-use.html">Términos de Uso</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Datos de Contacto</h3>
+          <p><strong>Teléfono:</strong> +34 915 601 152</p>
+          <p>
+            <strong>Dirección:</strong> C. del Marqués de Jura Real, 20,
+            Carabanchel, 28019 Madrid
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@aiproceso.es">info@aiproceso.es</a>
+          </p>
+        </div>
       </div>
-      <p class="footer-right">© 2025 All rights reserved</p>
+      <p class="footer-rights">© Todos los derechos reservados 2025</p>
     </footer>
 
-    <div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-popup" id="cookiePopup">
       <div class="cookie-popup-content">
+        <h2>Uso de Cookies</h2>
         <p>
-          We use cookies to ensure you get the best experience on our website.
-          By continuing, you agree to our
-          <a href="./cookie-policy.html">use of cookies.</a>
+          Utilizamos cookies para mejorar su experiencia en nuestro sitio web.
+          Al continuar navegando, acepta nuestro uso de cookies.
         </p>
-        <button id="accept-cookie" class="secondary-btn">Accept</button>
+        <button class="cookie-btn" id="acceptCookies">Aceptar</button>
       </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
   </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
 </html>
