@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextGenAI</title>
+    <link rel="icon" href="/images/logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="logo">
+        <img class="logo-img" src="./images/logo.png" alt="logo" />
+        NextGen<span>AI</span></a
+      >
+      <nav>
+        <ul class="header-nav-list">
+          <li><a class="header-nav-link" href="./index.html">Home</a></li>
+          <li><a class="header-nav-link" href="#about">About</a></li>
+          <li>
+            <a class="header-nav-link" href="#why-choose-us">Why Choose Us</a>
+          </li>
+          <li>
+            <a class="header-nav-link" href="#our-project">Our Projects</a>
+          </li>
+          <li>
+            <a class="header-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="header-nav-link" href="#blog">Blog</a></li>
+          <li><a class="primary-btn" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <h1 class="hero-title">Stay Ahead with NextGenAI</h1>
+          <p class="hero-descr">
+            Discover the latest advancements in AI technology, research, and
+            applications. Stay informed and ahead of the curve with NextGenAI.
+          </p>
+          <div class="buttons-wrap">
+            <a class="primary-btn" href="#contact">Join Us</a>
+            <a class="secondary-btn" href="#our-services">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us" id="about">
+        <div class="container">
+          <div class="about-us-img-wrap rectangle">
+            <img class="image" src="./images/about-us-ai.jpg" alt="About Us" />
+          </div>
+          <div class="about-us-wrap">
+            <p class="section-name">/About Us</p>
+            <h2 class="title">Your Trusted Source for AI Insights</h2>
+            <p class="descr">
+              At NextGenAI, we are dedicated to providing you with the most
+              up-to-date information on AI technologies, research breakthroughs,
+              and practical applications. Our team of experts analyzes trends
+              and developments to help you stay informed and make better
+              decisions in the world of AI.
+            </p>
+            <ul class="about-us-list">
+              <li>
+                <h3><span>+</span>500</h3>
+                <p>Articles Published</p>
+              </li>
+              <li>
+                <h3>10<span>Y</span></h3>
+                <p>Experience in AI</p>
+              </li>
+              <li>
+                <h3><span>+</span>1000</h3>
+                <p>Satisfied Readers</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-services" id="our-services">
+        <div class="container">
+          <div class="our-services-wrap">
+            <p class="section-name">/Our Services</p>
+            <h2 class="title">Comprehensive AI Insights</h2>
+          </div>
+          <div class="buttons-wrap">
+            <a class="primary-btn" href="#contact">Join Us</a>
+          </div>
+          <ul class="our-services-list">
+            <li>
+              <img src="./images/our-services/ai-news.jpg" alt="AI News" />
+              <h3 class="subtitle">AI News</h3>
+              <p>
+                Stay updated with the latest news and developments in the world
+                of AI.
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/our-services/ai-research.jpg"
+                alt="AI Research"
+              />
+              <h3 class="subtitle">AI Research</h3>
+              <p>
+                Explore in-depth research articles and papers on cutting-edge AI
+                technologies.
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/our-services/ai-applications.jpg"
+                alt="AI Applications"
+              />
+              <h3 class="subtitle">AI Applications</h3>
+              <p>
+                Learn about practical applications of AI in various industries.
+              </p>
+            </li>
+            <li>
+              <img src="./images/our-services/ai-trends.jpg" alt="AI Trends" />
+              <h3 class="subtitle">AI Trends</h3>
+              <p>
+                Discover the latest trends and future directions in AI
+                technology.
+              </p>
+            </li>
+            <li>
+              <img src="./images/our-services/ai-tools.jpg" alt="AI Tools" />
+              <h3 class="subtitle">AI Tools</h3>
+              <p>
+                Find out about the best tools and resources for AI development
+                and research.
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/our-services/ai-community.jpg"
+                alt="AI Community"
+              />
+              <h3 class="subtitle">AI Community</h3>
+              <p>
+                Connect with other AI enthusiasts and professionals in our
+                community.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="trigger">
+        <div class="container">
+          <h2 class="title">Ready to Dive into AI? Join Us Today.</h2>
+          <p class="descr">
+            Stay informed and ahead of the curve with NextGenAI. Join our
+            community and start exploring the world of AI today.
+          </p>
+          <div class="buttons-wrap">
+            <a class="primary-btn" href="#contact">Join Us</a>
+            <a class="secondary-btn" href="#our-services">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-choose" id="why-choose">
+        <div class="container">
+          <div class="rectangle">
+            <img
+              src="./images/why-choose-us.jpg"
+              class="image"
+              alt="Why Choose Us"
+            />
+          </div>
+          <div class="why-choose-wrap">
+            <p class="section-name">/Why Choose Us</p>
+            <h2 class="title">Unmatched Quality and Expertise</h2>
+            <p class="descr">
+              At NextGenAI, we pride ourselves on delivering high-quality,
+              reliable information on AI technologies. Our team of experts
+              ensures that you receive the most accurate and up-to-date
+              insights.
+            </p>
+            <ul class="why-choose-list">
+              <li>
+                <svg>
+                  <use href="./images/sprite.svg#icon-check"></use>
+                </svg>
+                <p>Over 10 years of experience in AI</p>
+              </li>
+              <li>
+                <svg>
+                  <use href="./images/sprite.svg#icon-check"></use>
+                </svg>
+                <p>500+ articles published</p>
+              </li>
+              <li>
+                <svg>
+                  <use href="./images/sprite.svg#icon-check"></use>
+                </svg>
+                <p>Trusted by thousands of readers</p>
+              </li>
+            </ul>
+          </div>
+          <div class="why-choose-wrap">
+            <h2 class="title">Empowering You with AI Knowledge</h2>
+            <p class="descr">
+              Our mission is to empower you with the knowledge and tools you
+              need to succeed in the world of AI. Whether you're a beginner or
+              an expert, NextGenAI has something for you.
+            </p>
+            <ul class="why-wrap-list">
+              <li>
+                <h3><span>+</span>1000</h3>
+                <p>Satisfied Readers</p>
+              </li>
+              <li>
+                <h3>100<span>%</span></h3>
+                <p>Quality Content</p>
+              </li>
+            </ul>
+          </div>
+          <div class="rectangle">
+            <img
+              class="image"
+              src="./images/why-choose-us-2.jpg"
+              alt="Why Choose Us"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="our-project" id="our-project">
+        <div class="container">
+          <p class="section-name">/Featured Articles</p>
+          <div class="our-project-wrap">
+            <h2 class="title">Our Articles Speak for Themselves</h2>
+            <div class="buttons-wrap">
+              <a class="primary-btn" href="#contact">Join Us</a>
+              <a class="secondary-btn" href="#our-services">Learn More</a>
+            </div>
+          </div>
+          <div class="swiper our-project-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide our-project-slide">
+                <img
+                  src="./images/our-projects/ai-article-1.jpg"
+                  alt="AI in Healthcare"
+                />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Healthcare</h3>
+                  <p class="descr">
+                    Explore how AI is revolutionizing the healthcare industry
+                    with innovative solutions and improved patient care.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Healthcare</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img
+                  src="./images/our-projects/ai-article-2.jpg"
+                  alt="AI in Finance"
+                />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Finance</h3>
+                  <p class="descr">
+                    Discover the impact of AI on the financial sector, from
+                    automated trading to fraud detection.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Finance</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img
+                  src="./images/our-projects/ai-article-3.jpg"
+                  alt="AI in Education"
+                />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Education</h3>
+                  <p class="descr">
+                    Learn how AI is transforming education with personalized
+                    learning experiences and advanced teaching tools.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Education</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img
+                  src="./images/our-projects/ai-article-4.jpg"
+                  alt="AI in Transportation"
+                />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Transportation</h3>
+                  <p class="descr">
+                    Understand the role of AI in shaping the future of
+                    transportation with autonomous vehicles and smart traffic
+                    management.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Transportation</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img
+                  src="./images/our-projects/ai-article-5.jpg"
+                  alt="AI in Retail"
+                />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Retail</h3>
+                  <p class="descr">
+                    Explore how AI is enhancing the retail experience with
+                    personalized recommendations and efficient supply chain
+                    management.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Retail</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img
+                  src="./images/our-projects/ai-article-6.jpg"
+                  alt="AI in Manufacturing"
+                />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Manufacturing</h3>
+                  <p class="descr">
+                    Discover how AI is optimizing manufacturing processes with
+                    predictive maintenance and quality control.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Manufacturing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-project-navigation">
+            <div class="project-swiper-button-prev">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="project-swiper-button-next">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764
+                11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258
+                11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149
+                0.506632C12.9454 0.537107 13.2503 0.697637 13.<!DOCTYPE html>
+                <html lang="en">
+                  <head>
+                    <meta charset="UTF-8" />
+                    <meta
+                      name="viewport"
+                      content="width=device-width, initial-scale=1.0"
+                    />
+                    <title>NextGenAI</title>
+                    <link rel="icon" href="/images/logo.png" type="image/png" />
+                    <link
+                      rel="stylesheet"
+                      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+                    />
+                    <link
+                      rel="preconnect"
+                      href="https://fonts.googleapis.com"
+                    />
+                    <link
+                      rel="preconnect"
+                      href="https://fonts.gstatic.com"
+                      crossorigin
+                    />
+                    <link
+                      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+                      rel="stylesheet"
+                    />
+                    <link
+                      rel="stylesheet"
+                      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+                    />
+                    <link rel="stylesheet" href="styles.css" />
+                    <link
+                      rel="stylesheet"
+                      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+                    />
+                    <script
+                      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
+                    ></script>
+                  </head>
+                  <body>
+                    <header class="header">
+                      <a href="./index.html" class="logo">
+                        <img
+                          class="logo-img"
+                          src="./images/logo.png"
+                          alt="logo"
+                        />
+                        NextGen
+                        <span>AI</span>
+                      </a>
+                      <nav>
+                        <ul class="header-nav-list">
+                          <li>
+                            <a class="header-nav-link" href="./index.html">
+                              Home
+                            </a>
+                          </li>
+                          <li>
+                            <a class="header-nav-link" href="#about">About</a>
+                          </li>
+                          <li>
+                            <a class="header-nav-link" href="#why-choose-us">
+                              Why Choose Us
+                            </a>
+                          </li>
+                          <li>
+                            <a class="header-nav-link" href="#our-project">
+                              Our Projects
+                            </a>
+                          </li>
+                          <li>
+                            <a class="header-nav-link" href="#testimonials">
+                              Testimonials
+                            </a>
+                          </li>
+                          <li>
+                            <a class="header-nav-link" href="#blog">Blog</a>
+                          </li>
+                          <li>
+                            <a class="primary-btn" href="#contact">
+                              Contact Us
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </header>
+                    <main>
+                      <section class="hero">
+                        <div class="hero-container">
+                          <h1 class="hero-title">Stay Ahead with NextGenAI</h1>
+                          <p class="hero-descr">
+                            Discover the latest advancements in AI technology,
+                            research, and applications. Stay informed and ahead
+                            of the curve with NextGenAI.
+                          </p>
+                          <div class="buttons-wrap">
+                            <a class="primary-btn" href="#contact">Join Us</a>
+                            <a class="secondary-btn" href="#our-services">
+                              Learn More
+                            </a>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="about-us" id="about">
+                        <div class="container">
+                          <div class="about-us-img-wrap rectangle">
+                            <img
+                              class="image"
+                              src="./images/about-us-ai.jpg"
+                              alt="About Us"
+                            />
+                          </div>
+                          <div class="about-us-wrap">
+                            <p class="section-name">/About Us</p>
+                            <h2 class="title">
+                              Your Trusted Source for AI Insights
+                            </h2>
+                            <p class="descr">
+                              At NextGenAI, we are dedicated to providing you
+                              with the most up-to-date information on AI
+                              technologies, research breakthroughs, and
+                              practical applications. Our team of experts
+                              analyzes trends and developments to help you stay
+                              informed and make better decisions in the world of
+                              AI.
+                            </p>
+                            <ul class="about-us-list">
+                              <li>
+                                <h3>
+                                  <span>+</span>
+                                  500
+                                </h3>
+                                <p>Articles Published</p>
+                              </li>
+                              <li>
+                                <h3>
+                                  10
+                                  <span>Y</span>
+                                </h3>
+                                <p>Experience in AI</p>
+                              </li>
+                              <li>
+                                <h3>
+                                  <span>+</span>
+                                  1000
+                                </h3>
+                                <p>Satisfied Readers</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="our-services" id="our-services">
+                        <div class="container">
+                          <div class="our-services-wrap">
+                            <p class="section-name">/Our Services</p>
+                            <h2 class="title">Comprehensive AI Insights</h2>
+                          </div>
+                          <div class="buttons-wrap">
+                            <a class="primary-btn" href="#contact">Join Us</a>
+                          </div>
+                          <ul class="our-services-list">
+                            <li>
+                              <img
+                                src="./images/our-services/ai-news.jpg"
+                                alt="AI News"
+                              />
+                              <h3 class="subtitle">AI News</h3>
+                              <p>
+                                Stay updated with the latest news and
+                                developments in the world of AI.
+                              </p>
+                            </li>
+                            <li>
+                              <img
+                                src="./images/our-services/ai-research.jpg"
+                                alt="AI Research"
+                              />
+                              <h3 class="subtitle">AI Research</h3>
+                              <p>
+                                Explore in-depth research articles and papers on
+                                cutting-edge AI technologies.
+                              </p>
+                            </li>
+                            <li>
+                              <img
+                                src="./images/our-services/ai-applications.jpg"
+                                alt="AI Applications"
+                              />
+                              <h3 class="subtitle">AI Applications</h3>
+                              <p>
+                                Learn about practical applications of AI in
+                                various industries.
+                              </p>
+                            </li>
+                            <li>
+                              <img
+                                src="./images/our-services/ai-trends.jpg"
+                                alt="AI Trends"
+                              />
+                              <h3 class="subtitle">AI Trends</h3>
+                              <p>
+                                Discover the latest trends and future directions
+                                in AI technology.
+                              </p>
+                            </li>
+                            <li>
+                              <img
+                                src="./images/our-services/ai-tools.jpg"
+                                alt="AI Tools"
+                              />
+                              <h3 class="subtitle">AI Tools</h3>
+                              <p>
+                                Find out about the best tools and resources for
+                                AI development and research.
+                              </p>
+                            </li>
+                            <li>
+                              <img
+                                src="./images/our-services/ai-community.jpg"
+                                alt="AI Community"
+                              />
+                              <h3 class="subtitle">AI Community</h3>
+                              <p>
+                                Connect with other AI enthusiasts and
+                                professionals in our community.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </section>
+
+                      <section class="trigger">
+                        <div class="container">
+                          <h2 class="title">
+                            Ready to Dive into AI? Join Us Today.
+                          </h2>
+                          <p class="descr">
+                            Stay informed and ahead of the curve with NextGenAI.
+                            Join our community and start exploring the world of
+                            AI today.
+                          </p>
+                          <div class="buttons-wrap">
+                            <a class="primary-btn" href="#contact">Join Us</a>
+                            <a class="secondary-btn" href="#our-services">
+                              Learn More
+                            </a>
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="why-choose" id="why-choose">
+                        <div class="container">
+                          <div class="rectangle">
+                            <img
+                              src="./images/why-choose-us.jpg"
+                              class="image"
+                              alt="Why Choose Us"
+                            />
+                          </div>
+                          <div class="why-choose-wrap">
+                            <p class="section-name">/Why Choose Us</p>
+                            <h2 class="title">
+                              Unmatched Quality and Expertise
+                            </h2>
+                            <p class="descr">
+                              At NextGenAI, we pride ourselves on delivering
+                              high-quality, reliable information on AI
+                              technologies. Our team of experts ensures that you
+                              receive the most accurate and up-to-date insights.
+                            </p>
+                            <ul class="why-choose-list">
+                              <li>
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#icon-check"
+                                  ></use>
+                                </svg>
+                                <p>Over 10 years of experience in AI</p>
+                              </li>
+                              <li>
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#icon-check"
+                                  ></use>
+                                </svg>
+                                <p>500+ articles published</p>
+                              </li>
+                              <li>
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#icon-check"
+                                  ></use>
+                                </svg>
+                                <p>Trusted by thousands of readers</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="why-choose-wrap">
+                            <h2 class="title">
+                              Empowering You with AI Knowledge
+                            </h2>
+                            <p class="descr">
+                              Our mission is to empower you with the knowledge
+                              and tools you need to succeed in the world of AI.
+                              Whether you're a beginner or an expert, NextGenAI
+                              has something for you.
+                            </p>
+                            <ul class="why-wrap-list">
+                              <li>
+                                <h3>
+                                  <span>+</span>
+                                  1000
+                                </h3>
+                                <p>Satisfied Readers</p>
+                              </li>
+                              <li>
+                                <h3>
+                                  100
+                                  <span>%</span>
+                                </h3>
+                                <p>Quality Content</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="rectangle">
+                            <img
+                              class="image"
+                              src="./images/why-choose-us-2.jpg"
+                              alt="Why Choose Us"
+                            />
+                          </div>
+                        </div>
+                      </section>
+
+                      <section class="our-project" id="our-project">
+                        <div class="container">
+                          <p class="section-name">/Featured Articles</p>
+                          <div class="our-project-wrap">
+                            <h2 class="title">
+                              Our Articles Speak for Themselves
+                            </h2>
+                            <div class="buttons-wrap">
+                              <a class="primary-btn" href="#contact">Join Us</a>
+                              <a class="secondary-btn" href="#our-services">
+                                Learn More
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper our-project-swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide our-project-slide">
+                                <img
+                                  src="./images/our-projects/ai-article-1.jpg"
+                                  alt="AI in Healthcare"
+                                />
+                                <div class="our-project-wrapper">
+                                  <h3 class="subtitle">AI in Healthcare</h3>
+                                  <p class="descr">
+                                    Explore how AI is revolutionizing the
+                                    healthcare industry with innovative
+                                    solutions and improved patient care.
+                                  </p>
+                                  <div class="our-project-line"></div>
+                                  <p class="our-project-type">Healthcare</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide our-project-slide">
+                                <img
+                                  src="./images/our-projects/ai-article-2.jpg"
+                                  alt="AI in Finance"
+                                />
+                                <div class="our-project-wrapper">
+                                  <h3 class="subtitle">AI in Finance</h3>
+                                  <p class="descr">
+                                    Discover the impact of AI on the financial
+                                    sector, from automated trading to fraud
+                                    detection.
+                                  </p>
+                                  <div class="our-project-line"></div>
+                                  <p class="our-project-type">Finance</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide our-project-slide">
+                                <img
+                                  src="./images/our-projects/ai-article-3.jpg"
+                                  alt="AI in Education"
+                                />
+                                <div class="our-project-wrapper">
+                                  <h3 class="subtitle">AI in Education</h3>
+                                  <p class="descr">
+                                    Learn how AI is transforming education with
+                                    personalized learning experiences and
+                                    advanced teaching tools.
+                                  </p>
+                                  <div class="our-project-line"></div>
+                                  <p class="our-project-type">Education</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide our-project-slide">
+                                <img
+                                  src="./images/our-projects/ai-article-4.jpg"
+                                  alt="AI in Transportation"
+                                />
+                                <div class="our-project-wrapper">
+                                  <h3 class="subtitle">AI in Transportation</h3>
+                                  <p class="descr">
+                                    Understand the role of AI in shaping the
+                                    future of transportation with autonomous
+                                    vehicles and smart traffic management.
+                                  </p>
+                                  <div class="our-project-line"></div>
+                                  <p class="our-project-type">Transportation</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide our-project-slide">
+                                <img
+                                  src="./images/our-projects/ai-article-5.jpg"
+                                  alt="AI in Retail"
+                                />
+                                <div class="our-project-wrapper">
+                                  <h3 class="subtitle">AI in Retail</h3>
+                                  <p class="descr">
+                                    Explore how AI is enhancing the retail
+                                    experience with personalized recommendations
+                                    and efficient supply chain management.
+                                  </p>
+                                  <div class="our-project-line"></div>
+                                  <p class="our-project-type">Retail</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide our-project-slide">
+                                <img
+                                  src="./images/our-projects/ai-article-6.jpg"
+                                  alt="AI in Manufacturing"
+                                />
+                                <div class="our-project-wrapper">
+                                  <h3 class="subtitle">AI in Manufacturing</h3>
+                                  <p class="descr">
+                                    Discover how AI is optimizing manufacturing
+                                    processes with predictive maintenance and
+                                    quality control.
+                                  </p>
+                                  <div class="our-project-line"></div>
+                                  <p class="our-project-type">Manufacturing</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </main>
+                  </body>
+                </html>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

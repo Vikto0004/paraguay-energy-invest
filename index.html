@@ -3,373 +3,379 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="icon" href="images/logo.png" type="image/png" />
+    <title>NextGenAI</title>
+    <link rel="icon" href="/images/logo.png" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
   <body>
     <header class="header">
-      <a class="logo" href="./index.html"
-        ><img src="./images/logo.png" alt="logo" />CompanyName</a
+      <a href="./index.html" class="logo">
+        <img class="logo-img" src="./images/logo.png" alt="logo" />
+        NextGen<span>AI</span></a
       >
-      <nav class="header-nav">
+      <nav>
         <ul class="header-nav-list">
-          <li><a href="./index.html#services">Services</a></li>
-          <li><a href="./index.html#key-features">Key Features</a></li>
-          <li><a href="./index.html#start-now">Start Now</a></li>
-          <li><a href="./index.html#our-blog">Our Blog</a></li>
-          <li><a href="./index.html#faq">FAQ</a></li>
+          <li><a class="header-nav-link" href="./index.html">Home</a></li>
+          <li>
+            <a class="header-nav-link" href="./index.html#about">About</a>
+          </li>
+          <li>
+            <a class="header-nav-link" href="./index.html#why-choose-us"
+              >Why Choose Us</a
+            >
+          </li>
+          <li>
+            <a class="header-nav-link" href="./index.html#our-project"
+              >Our Projects</a
+            >
+          </li>
+          <li>
+            <a class="header-nav-link" href="#./index.html#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li><a class="header-nav-link" href="#./index.htmlblog">Blog</a></li>
+          <li>
+            <a class="primary-btn" href="./index.html#contact">Contact Us</a>
+          </li>
         </ul>
-        <button
-          class="secondary-btn"
-          onclick="window.location='./index.html#contact'"
-        >
-          Contact Us
-        </button>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="hero-title">Financial Solutions.</h1>
-            <p class="hero-text">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics
-            </p>
-            <button class="secondary-btn">Let’s Talk</button>
+        <div class="hero-container">
+          <h1 class="hero-title">Stay Ahead with NextGenAI</h1>
+          <p class="hero-descr">
+            Discover the latest advancements in AI technology, research, and
+            applications. Stay informed and ahead of the curve with NextGenAI.
+          </p>
+          <div class="buttons-wrap">
+            <a class="primary-btn" href="#contact">Join Us</a>
+            <a class="secondary-btn" href="#our-services">Learn More</a>
           </div>
-          <img class="hero-img" src="./images/hero.png" alt="hero" />
         </div>
       </section>
 
-      <section class="about-us" id="about-us">
+      <section class="about-us" id="about">
         <div class="container">
-          <div class="about-us-content">
-            <p class="section-name">Our Firm</p>
-            <h2 class="title">
-              We are Agile. Constantly Focused on Growth and Being Better
-            </h2>
-            <p class="descr">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics
-            </p>
-            <p class="descr">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics
-            </p>
-            <button class="primary-btn">Read About Us</button>
+          <div class="about-us-img-wrap rectangle">
+            <img class="image" src="./images/about-us-ai.jpg" alt="About Us" />
           </div>
-          <ul class="about-us-stats">
-            <li>18<span>Years Experience</span></li>
-            <li>240+<span>Completed Projects</span></li>
-            <li>9.5/10<span>Average rating</span></li>
-            <li>150+<span>Served</span></li>
-          </ul>
+          <div class="about-us-wrap">
+            <p class="section-name">/About Us</p>
+            <h2 class="title">Your Trusted Source for AI Insights</h2>
+            <p class="descr">
+              At NextGenAI, we are dedicated to providing you with the most
+              up-to-date information on AI technologies, research breakthroughs,
+              and practical applications. Our team of experts analyzes trends
+              and developments to help you stay informed and make better
+              decisions in the world of AI.
+            </p>
+            <ul class="about-us-list">
+              <li>
+                <h3><span>+</span>500</h3>
+                <p>Articles Published</p>
+              </li>
+              <li>
+                <h3>10<span>Y</span></h3>
+                <p>Experience in AI</p>
+              </li>
+              <li>
+                <h3><span>+</span>1000</h3>
+                <p>Satisfied Readers</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="services" id="services">
+      <section class="our-services" id="our-services">
         <div class="container">
-          <p class="section-name">Our Services</p>
-          <h2 class="title">What We Offer</h2>
-          <ul class="services-list">
-            <li class="services-list-item">
-              <img src="./images/Wallet.png" alt="Wallet" />
-              <p class="descr">#1</p>
-              <h3 class="subtitle">Financial Report</h3>
-              <p class="descr">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia.
+          <div class="our-services-wrap">
+            <p class="section-name">/Our Services</p>
+            <h2 class="title">Comprehensive AI Insights</h2>
+          </div>
+          <div class="buttons-wrap">
+            <a class="primary-btn" href="#contact">Join Us</a>
+          </div>
+          <ul class="our-services-list">
+            <li>
+              <img src="./images/news.png" alt="AI News" />
+              <h3 class="subtitle">AI News</h3>
+              <p>
+                Stay updated with the latest news and developments in the world
+                of AI.
               </p>
             </li>
-            <li class="services-list-item">
-              <img src="./images/work.png" alt="work" />
-              <p class="descr">#2</p>
-              <h3 class="subtitle">Manage Investments</h3>
-              <p class="descr">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia.
+            <li>
+              <img src="./images/research.png" alt="AI Research" />
+              <h3 class="subtitle">AI Research</h3>
+              <p>
+                Explore in-depth research articles and papers on cutting-edge AI
+                technologies.
               </p>
             </li>
-            <li class="services-list-item">
-              <img src="./images/chart.png" alt="chart" />
-              <p class="descr">#3</p>
-              <h3 class="subtitle">Financial Report</h3>
-              <p class="descr">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia.
+            <li>
+              <img src="./images/applications.png" alt="AI Applications" />
+              <h3 class="subtitle">AI Applications</h3>
+              <p>
+                Learn about practical applications of AI in various industries.
+              </p>
+            </li>
+            <li>
+              <img src="./images/trends.png" alt="AI Trends" />
+              <h3 class="subtitle">AI Trends</h3>
+              <p>
+                Discover the latest trends and future directions in AI
+                technology.
+              </p>
+            </li>
+            <li>
+              <img src="./images/tools.png" alt="AI Tools" />
+              <h3 class="subtitle">AI Tools</h3>
+              <p>
+                Find out about the best tools and resources for AI development
+                and research.
+              </p>
+            </li>
+            <li>
+              <img src="./images/community.png" alt="AI Community" />
+              <h3 class="subtitle">AI Community</h3>
+              <p>
+                Connect with other AI enthusiasts and professionals in our
+                community.
               </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="key-features" id="key-features">
+      <section class="trigger">
         <div class="container">
-          <div class="key-features-content">
-            <p class="section-name">Key Features</p>
-            <h2 class="title">Manage Your Finances From one Place</h2>
-            <p class="descr">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics
-            </p>
-            <p class="descr">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics
-            </p>
-            <button class="secondary-btn">Check All Fitures</button>
-          </div>
-          <img src="./images/key-features-img.jpg" alt="key features ai" />
-        </div>
-      </section>
-
-      <section class="start-now" id="start-now">
-        <div class="container">
-          <ul class="start-now-list">
-            <li>
-              <div class="start-now-list-cicle">
-                <img src="./images/game.png" alt="game" />
-              </div>
-              <h3>Innovative Solutions</h3>
-            </li>
-            <li>
-              <div class="start-now-list-cicle">
-                <img src="./images/call.png" alt="call" />
-              </div>
-              <h3>24/7 Support</h3>
-            </li>
-            <li>
-              <div class="start-now-list-cicle">
-                <img src="./images/user.png" alt="user" />
-              </div>
-              <h3>Professional Team</h3>
-            </li>
-          </ul>
-          <div class="start-now-content">
-            <p class="section-name">Start Now</p>
-            <h2 class="title">
-              Start Now & Make Your Finances Clear & Organized
-            </h2>
-            <p class="descr">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics
-            </p>
-            <p class="descr">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics
-            </p>
+          <h2 class="title">Ready to Dive into AI? Join Us Today.</h2>
+          <p class="descr">
+            Stay informed and ahead of the curve with NextGenAI. Join our
+            community and start exploring the world of AI today.
+          </p>
+          <div class="buttons-wrap">
+            <a class="primary-btn" href="#contact">Join Us</a>
+            <a class="secondary-btn" href="#our-services">Learn More</a>
           </div>
         </div>
       </section>
 
-      <section class="our-blog" id="our-blog">
+      <section class="why-choose" id="why-choose">
         <div class="container">
-          <p class="section-name">Our blog</p>
-          <h2 class="title">Latest News</h2>
-          <ul class="our-blog-list">
-            <li class="our-blog-list-item">
-              <img
-                src="./images/how-to-start.jpg"
-                alt="How to Start a Successful in 2020"
-              />
-              <div>
-                <p class="our-blog-list-date">January 01, 2021</p>
-                <h3>How to Start a Successful in 2020</h3>
-                <p class="descr">
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia.
-                </p>
-              </div>
-            </li>
-            <li class="our-blog-list-item">
-              <img
-                src="./images/grow-your-business.jpg"
-                alt="Grow Your Business with Email Marketing"
-              />
-              <div>
-                <p class="our-blog-list-date">January 01, 2021</p>
-                <h3>Grow Your Business with Email Marketing</h3>
-                <p class="descr">
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia.
-                </p>
-              </div>
-            </li>
-            <li class="our-blog-list-item">
-              <img
-                src="./images/every-online-business.jpg"
-                alt="The 4 Pillars Every Online Business"
-              />
-              <div>
-                <p class="our-blog-list-date">January 01, 2021</p>
-                <h3>The 4 Pillars Every Online Business</h3>
-                <p class="descr">
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia.
-                </p>
-              </div>
-            </li>
-          </ul>
+          <div class="rectangle">
+            <img
+              src="./images/why-choose-ai.jpg"
+              class="image"
+              alt="Why Choose Us"
+            />
+          </div>
+          <div class="why-choose-wrap">
+            <p class="section-name">/Why Choose Us</p>
+            <h2 class="title">Unmatched Quality and Expertise</h2>
+            <p class="descr">
+              At NextGenAI, we pride ourselves on delivering high-quality,
+              reliable information on AI technologies. Our team of experts
+              ensures that you receive the most accurate and up-to-date
+              insights.
+            </p>
+            <ul class="why-choose-list">
+              <li>
+                <img src="./images/check.png" alt="check" />
+                <p>Over 10 years of experience in AI</p>
+              </li>
+              <li>
+                <img src="./images/check.png" alt="check" />
+
+                <p>500+ articles published</p>
+              </li>
+              <li>
+                <img src="./images/check.png" alt="check" />
+
+                <p>Trusted by thousands of readers</p>
+              </li>
+            </ul>
+          </div>
+          <div class="why-choose-wrap">
+            <h2 class="title">Empowering You with AI Knowledge</h2>
+            <p class="descr">
+              Our mission is to empower you with the knowledge and tools you
+              need to succeed in the world of AI. Whether you're a beginner or
+              an expert, NextGenAI has something for you.
+            </p>
+            <ul class="why-wrap-list">
+              <li>
+                <h3><span>+</span>1000</h3>
+                <p>Satisfied Readers</p>
+              </li>
+              <li>
+                <h3>100<span>%</span></h3>
+                <p>Quality Content</p>
+              </li>
+            </ul>
+          </div>
+          <div class="rectangle">
+            <img
+              class="image"
+              src="./images/why-choose-ai-2.jpg"
+              alt="Why Choose Us"
+            />
+          </div>
         </div>
       </section>
 
-      <section class="faq" id="faq">
+      <section class="our-project" id="our-project">
         <div class="container">
-          <h2 class="title">Preguntas Frecuentes</h2>
-          <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  ¿Qué es la inteligencia artificial (IA)?
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  La inteligencia artificial (IA) es un campo de la informática
-                  que se centra en la creación de sistemas capaces de realizar
-                  tareas que normalmente requieren inteligencia humana, como el
-                  reconocimiento de voz, el procesamiento de datos y la toma de
-                  decisiones.
+          <p class="section-name">/Featured Articles</p>
+          <div class="our-project-wrap">
+            <h2 class="title">Our Articles Speak for Themselves</h2>
+            <div class="buttons-wrap">
+              <a class="primary-btn" href="#contact">Join Us</a>
+              <a class="secondary-btn" href="#our-services">Learn More</a>
+            </div>
+          </div>
+          <div class="swiper our-project-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide our-project-slide">
+                <img
+                  src="./images/ai-in-healthcare.jpg"
+                  alt="AI in Healthcare"
+                />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Healthcare</h3>
+                  <p class="descr">
+                    Explore how AI is revolutionizing the healthcare industry
+                    with innovative solutions and improved patient care.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Healthcare</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img src="./images/ai-in-finance.jpg" alt="AI in Finance" />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Finance</h3>
+                  <p class="descr">
+                    Discover the impact of AI on the financial sector, from
+                    automated trading to fraud detection.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Finance</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img src="./images/ai-in-education.jpg" alt="AI in Education" />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Education</h3>
+                  <p class="descr">
+                    Learn how AI is transforming education with personalized
+                    learning experiences and advanced teaching tools.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Education</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img
+                  src="./images/ai-in-transportation.jpg"
+                  alt="AI in Transportation"
+                />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Transportation</h3>
+                  <p class="descr">
+                    Understand the role of AI in shaping the future of
+                    transportation with autonomous vehicles and smart traffic
+                    management.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Transportation</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img src="./images/ai-in-retail.jpg" alt="AI in Retail" />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Retail</h3>
+                  <p class="descr">
+                    Explore how AI is enhancing the retail experience with
+                    personalized recommendations and efficient supply chain
+                    management.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Retail</p>
+                </div>
+              </div>
+              <div class="swiper-slide our-project-slide">
+                <img
+                  src="./images/ai-in-manufacturing.jpg"
+                  alt="AI in Manufacturing"
+                />
+                <div class="our-project-wrapper">
+                  <h3 class="subtitle">AI in Manufacturing</h3>
+                  <p class="descr">
+                    Discover how AI is optimizing manufacturing processes with
+                    predictive maintenance and quality control.
+                  </p>
+                  <div class="our-project-line"></div>
+                  <p class="our-project-type">Manufacturing</p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  ¿Los cursos son gratuitos?
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#faqAccordion"
+          <div class="our-project-navigation">
+            <div class="project-swiper-button-prev">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <div class="accordion-body">
-                  Sí, ofrecemos cursos gratuitos sobre los fundamentos de la IA
-                  para principiantes. También ofrecemos cursos de pago para
-                  aquellos que desean profundizar en sus conocimientos.
-                </div>
-              </div>
+                <path
+                  d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
+                  fill="white"
+                />
+              </svg>
             </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  ¿Cómo puedo inscribirme en un curso?
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#faqAccordion"
+            <div class="project-swiper-button-next">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <div class="accordion-body">
-                  Puede inscribirse directamente en nuestro sitio web. Solo
-                  necesita crear una cuenta y elegir el curso que le interese.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  ¿Los cursos son adecuados para principiantes?
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFour"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Sí, nuestros cursos están diseñados para principiantes.
-                  Comenzamos con los conceptos básicos y le guiaremos a lo largo
-                  de su aprendizaje de la IA.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
-                  aria-expanded="false"
-                  aria-controls="collapseFive"
-                >
-                  ¿Cuáles son los requisitos previos para seguir los cursos?
-                </button>
-              </h2>
-              <div
-                id="collapseFive"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFive"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  No se requieren conocimientos previos específicos para
-                  nuestros cursos para principiantes. Sin embargo, una
-                  comprensión básica de las matemáticas y los conceptos
-                  informáticos puede ser útil para los cursos más avanzados.
-                </div>
-              </div>
+                <path
+                  d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
+                  fill="white"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -377,38 +383,35 @@
 
       <section class="contact" id="contact">
         <div class="container">
-          <h2 class="title">Contáctanos</h2>
+          <h2 class="title">Contact Us</h2>
           <p class="descr">
-            Rellena el formulario y nuestros consultores se pondrán en contacto
-            contigo.
+            Fill in the form and our consultants will reach out to you.
           </p>
           <div class="contact-wrap">
             <div class="contact-wrapper">
               <div class="contact-info">
-                <h3>Detalles de contacto</h3>
+                <h3>Contact Details</h3>
                 <p>
-                  <strong>Dirección:</strong> Calle de Alcalá, 123, Madrid,
-                  España
+                  <strong>Address:</strong> 239 Nepean St, Ottawa, ON K2P 0B7,
+                  Canada
                 </p>
-                <p><strong>Teléfono:</strong> +34 91 234 5678</p>
+                <p><strong>Phone Number:</strong> +1 613 4210 504</p>
                 <p>
                   <strong>Email:</strong>
-                  <a href="mailto:contact@iaaprende.com"
-                    >contact@iaaprende.com</a
-                  >
+                  <a href="mailto:info@nextgenai.ca">info@nextgenai.ca</a>
                 </p>
               </div>
               <form id="contact-form" class="contact-form">
                 <div class="input-group">
-                  <label for="name">Nombre completo</label>
+                  <label for="name">Full Name</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     required
-                    placeholder="Introduce tu nombre"
+                    placeholder="Enter your name"
                     pattern="[A-Za-z\s]{1,50}"
-                    title="El nombre debe contener solo letras y espacios, y tener una longitud máxima de 50 caracteres."
+                    title="Name should only contain letters and spaces, and be up to 50 characters long."
                   />
                 </div>
 
@@ -419,50 +422,69 @@
                     id="email"
                     name="email"
                     required
-                    placeholder="Introduce tu email"
+                    placeholder="Enter your email"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    title="Introduce una dirección de correo electrónico válida."
+                    title="Please enter a valid email address."
                   />
                 </div>
 
                 <div class="input-group">
-                  <label for="phone">Número de teléfono</label>
+                  <label for="phone">Phone Number</label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
                     required
-                    pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-                    placeholder="Introduce tu teléfono"
-                    title="Introduce un número de teléfono válido."
+                    placeholder="Enter your phone number"
+                    pattern="\+?[0-9\s\-]{7,15}"
+                    title="Phone number should be between 7 and 15 digits and can include spaces, dashes, and an optional leading +."
                   />
                 </div>
 
-                <button type="submit" class="secondary-btn">
-                  Enviar solicitud
-                </button>
+                <button type="submit" class="submit-btn">Submit Request</button>
               </form>
             </div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.271489774504!2d-3.703790684594!3d40.416775979364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287c1b8b1f1b%3A0x8c0b8b8b8b8b8b8b!2sCalle%20de%20Alcal%C3%A1%2C%20123%2C%2028009%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2ses!4v1616161616161!5m2!1ses!2ses"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d175.03954255668785!2d-75.69965461701683!3d45.416746188586515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0453478ac95f%3A0x6baf6b72704748d3!2zMjM5IE5lcGVhbiBTdCwgT3R0YXdhLCBPTiBLMlAgMEI3LCDQmtCw0L3QsNC00LA!5e0!3m2!1suk!2spl!4v1742130709630!5m2!1suk!2spl"
               width="100%"
-              height="500"
+              height="550"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="contact-map"
             ></iframe>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <img class="logo-img" src="./images/logo.png" alt="logo" />
+          NextGen<span>AI</span></a
+        >
+        <ul class="header-nav-list">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-use.html">Terms of Use</a></li>
+          <li><a href="cookie-policy.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <p class="footer-right">© 2025 All rights reserved</p>
+    </footer>
+
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup-content">
+        <p>
+          We use cookies to ensure you get the best experience on our website.
+          By continuing, you agree to our
+          <a href="./cookie-policy.html">use of cookies.</a>
+        </p>
+        <button id="accept-cookie" class="secondary-btn">Accept</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-  <script src="./js/script.js"></script>
 </html>
