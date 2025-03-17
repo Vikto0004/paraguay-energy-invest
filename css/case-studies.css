@@ -1,0 +1,95 @@
+.time-management-hero {
+  position: relative;
+  padding-top: 250px;
+  height: 700px;
+  background-image: url(../images/time-management-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.time-management-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.time-management-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.time-management-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  color: #fff;
+}
+
+.time-management-hero h1 span {
+  color: var(--primery-color);
+}
+
+.time-management-hero .descr {
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.descr {
+  max-width: 800px;
+  margin: 0 auto 10px;
+}
+
+.time-management-tools,
+.time-management {
+  padding: 60px 0;
+}
+
+.time-management-tools .title {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.time-management-tools-content,
+.time-management-content {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.time-management-tools-content .descr,
+.time-management-content .descr {
+  text-align: start;
+}
+
+.time-management-tools-image,
+.time-management-image {
+  max-width: 500px;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+.time-management-tools-details,
+.time-management-details {
+  padding-top: 40px;
+  max-width: 500px;
+}
+
+.time-management-tools-details,
+.time-management-details li {
+  font-size: 18px;
+}
+
+.client-feedback {
+  max-width: 850px;
+  margin: 0 auto;
+}
