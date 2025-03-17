@@ -3,11 +3,11 @@ html {
 }
 
 :root {
-  --primery-color: #8a44ed;
-  --secondery-color: #000000;
-  --hover-btn: #8a44edcc;
+  --primery-color: #ec5929;
+  --secondery-color: #2b2b2b;
+  --hover-btn: #ec5929cc;
   --text-btn: #ffffffff;
-  --accordion-active: #8a44ed90;
+  --accordion-active: #ec592990;
   --background: #f3f4f6ff;
   --border-radius: 25px;
 }
@@ -446,7 +446,7 @@ img {
 
 /* Contact section */
 .contact {
-  padding: 0 0 130px;
+  padding: 140px 0 130px;
 }
 
 .contact iframe {
@@ -837,7 +837,7 @@ div.faq-container {
 /* === Testimonials === */
 
 .testimonials {
-  padding: 100px 0;
+  padding: 0 0 100px;
 }
 
 .testimonials .title {

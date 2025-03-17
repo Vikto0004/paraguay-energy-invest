@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nosotros - KazRentals</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monomakh&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrap">
+        <a href="index.html" class="logo">
+          <img
+            class="header-logo"
+            src="./images/logo.png"
+            alt="Логотип KazRentals"
+          />
+          KazRentals
+        </a>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li><a href="about-us.html">О нас</a></li>
+          <li><a href="booking.html">Бронирование</a></li>
+          <li><a href="cottages.html">Наши домики</a></li>
+
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="title">Свяжитесь с нами</h2>
+          <p class="descr">
+            Заполните форму, и наши консультанты свяжутся с вами для уточнения
+            деталей.
+          </p>
+          <div class="contact-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.0428753004385!2d71.42324437701923!3d51.12611717172916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841f833db1cf%3A0x7634399daf1f36d5!2z0JTQvtGB0YLRi9KbINC606nRiNC10YHRliAxMiwg0JDRgdGC0LDQvdCwIDAyMDAwMCwg0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1suk!2spl!4v1741099829747!5m2!1suk!2spl"
+              width="100%"
+              height="700"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="contact-wrapper">
+              <div class="contact-info">
+                <h3>Контактные данные</h3>
+                <p><strong>Адрес:</strong> г. Нур-Султан, ул. Достык, 12</p>
+                <p><strong>Телефон:</strong> +7 (777) 123-45-67</p>
+                <p>
+                  <strong>Email:</strong>
+                  <a href="mailto:info@plannermaster.kz"
+                    >info@plannermaster.kz</a
+                  >
+                </p>
+              </div>
+              <form id="contact-form" class="contact-form">
+                <div class="input-group">
+                  <label for="name">Имя</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Введите ваше имя"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="surname">Фамилия</label>
+                  <input
+                    type="text"
+                    id="surname"
+                    name="surname"
+                    required
+                    placeholder="Введите вашу фамилию"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="email">Электронная почта</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Введите вашу электронную почту"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="phone">Номер телефона</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                </div>
+                <button type="submit" class="button">Отправить заявку</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="booking.html">Бронирование</a></li>
+            <li><a href="cottages.html">Наши домики</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="privacy-policy.html">Политика конфиденциальности</a>
+            </li>
+            <li><a href="terms-of-use.html">Условия использования</a></li>
+            <li>
+              <a href="cookie-policy.html"
+                >Политика в отношении файлов cookie</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <p><strong>📍 Адрес:</strong> ул. Достык, 25, Алматы, Казахстан</p>
+          <p><strong>📞 Телефон:</strong> +7 727 345 67 89</p>
+          <p>
+            <strong>📧 Email:</strong>
+            <a href="mailto:info@plannermaster.kz">info@plannermaster.kz</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-wrap">
+        <p class="footer-right">© 2025 KazRentals. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
+</html>
