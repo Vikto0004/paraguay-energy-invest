@@ -1,0 +1,233 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #377dff;
+  --secondary-color: #6b1b9c;
+  --primary-hover: #306ad7;
+  --secondary-hover: #591782;
+
+  --text-primary: #464646;
+  --text-secondary: #1d1d1d;
+  --text-inverted: #fff;
+
+  --background-color: #fdffff;
+  --secondary-background: rgba(255, 255, 255, 0.08);
+  --accordion-active: #471eff68;
+
+  --linear-gradient: linear-gradient(
+    180deg,
+    rgba(255, 30, 30, 0.8) 0%,
+    #c30eff 100%
+  );
+  --blur: blur(376.5px);
+  --border-radius: 24px;
+
+  --font-family: "Quicksand", sans-serif;
+  --second-family: "Poppins", sans-serif;
+  --third-family: "Nunito", sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 55px;
+  letter-spacing: 0em;
+  color: var(--text-secondary);
+}
+
+.title span {
+  color: var(--secondary-color);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.descr {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
+}
+
+.section-name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: var(--primary-color);
+}
+
+.section {
+  padding: 60px 0;
+  scroll-margin-top: 60px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.primary-btn {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--text-inverted);
+  padding: 12px 50px;
+  border: none;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-hover);
+  text-decoration: none;
+  color: var(--text-inverted);
+}
+
+.secondary-btn {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+
+  display: inline-block;
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 12px 50px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-color);
+
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background-color: var(--primary-hover);
+  text-decoration: none;
+  color: var(--text-inverted);
+}
+
+.terms-privacy {
+  padding: 150px 0 60px;
+}
+
+.thank-you-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 180px;
+}
+
+.thank-you-container p {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--hover-btn);
+  text-decoration: underline;
+}
+
+.logo img {
+  width: 40px;
+  object-fit: contain;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-primary);
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  transition: all 0.3s ease-in-out;
+}
+
+.link::before {
+  content: "";
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  opacity: 0.8;
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  bottom: -2px;
+  height: 1px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover::before {
+  height: 110%;
+}
+
+.link:hover {
+  color: var(--text-inverted);
+}

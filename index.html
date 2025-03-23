@@ -3,603 +3,232 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KazRentals</title>
+    <meta name="keywords" content="" />
+    <title>BazaRosta</title>
     <link rel="icon" href="images/logo.png" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Monomakh&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header-wrap">
-        <a href="index.html" class="logo">
-          <img
-            class="header-logo"
-            src="./images/logo.png"
-            alt="Логотип KazRentals"
-          />
-          KazRentals
-        </a>
-      </div>
+      <a class="logo" href="./index.html">
+        <img src="./images/logo.png" alt="BazaRosta" />BazaRosta
+      </a>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><a href="about-us.html">О нас</a></li>
-          <li><a href="booking.html">Бронирование</a></li>
-          <li><a href="cottages.html">Наши домики</a></li>
-
-          <li><a href="contact.html">Контакты</a></li>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./pricing.html">Цены</a></li>
+          <li><a href="./blog.html">Блог</a></li>
+          <li><a href="./our-services.html">Наши услуги</a></li>
+          <li><a href="./index.html#faq">FAQ</a></li>
         </ul>
+        <a class="secondary-btn" href="./contact.html">Связаться</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <div class="swiper mySwiperHero">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide hero-slide">
-              <div class="hero-content">
-                <h1>Бронирование <span>Беседок и Домиков</span></h1>
-                <p>
-                  Забронируйте уютные беседки и домики для вашего отдыха в
-                  Казахстане. Наслаждайтесь комфортом и природой.
-                </p>
-                <a href="#contact" class="button">Узнать больше</a>
+        <div class="container">
+          <h1 class="hero-title animate__bounce">
+            Make your dream business goal come true
+          </h1>
+          <p class="hero-text animate__bounceInUp">
+            when you need us for improve your business, then come with us to
+            help your business have reach it, you just sit and feel that goal
+          </p>
+          <button class="primary-btn animate__bounceInUp" type="button">
+            Start Project
+          </button>
+          <div class="hero-wrapper animate__fadeInUp">
+            <img class="hero-wrapper-img" src="./images/hero.jpg" alt="hero" />
+            <div class="hero-wrapper-content">
+              <div class="hero-wrapper-content-item">
+                <img src="./images/star.png" alt="star icon" />
+                <p>Great Project</p>
               </div>
-              <div class="hero-media">
+              <p class="hero-wrapper-content-text"><span>800+</span> Done</p>
+            </div>
+            <div class="hero-wrapper-wrap">
+              <div class="hero-wrapper-wrap-item">
+                <img src="./images/bill-adams.jpg" alt="Bill Adams" />
+                <p>Bill Adams<span>CEO UpTech</span></p>
+              </div>
+              <p class="hero-wrapper-wrap-text">
+                “ This team is really the best in its field,I don't regret
+                working with them, and will come back again thanks “
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-circles">
+          <div class="hero-circles-left"></div>
+          <div class="hero-circles-right"></div>
+        </div>
+      </section>
+
+      <section class="about-us" id="about-us">
+        <div class="container">
+          <p class="section-name">About Us</p>
+          <h2 class="title">Our Teammate</h2>
+          <div class="about-us-content">
+            <div class="about-us-content-wrap">
+              <img src="./images/about-us.jpg" alt="teamwork" />
+            </div>
+            <div class="about-us-text">
+              <p class="descr">
+                We move with make a Creative Strategy for help your business
+                goal, we help to improve your income by a services we have. make
+                your content look interesting and make people look for your
+                business
+              </p>
+              <p class="descr">
+                We move with make a Creative Strategy for help your business
+                goal, we help to improve your income by a services we have. make
+                your content look interesting and make people look for your
+                business
+              </p>
+              <a class="primary-btn" href="./index.html#contact">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services-content">
+            <p class="section-name">Our Services</p>
+            <h2 class="title">Perfect and Fast Movement</h2>
+            <p class="descr">
+              We move with make a Creative Strategy for help your business goal,
+              we help to improve your income by a services we have. make your
+              content look interesting and make people look for your business
+            </p>
+            <a href="./index.html#contact" class="link">Read more</a>
+          </div>
+          <ul class="services-list">
+            <li>
+              <div class="services-list-item-img">
                 <img
-                  src="images/booking-gazebo.jpg"
-                  alt="Бронирование беседок"
+                  src="./images/social-media-management.png"
+                  alt="Social Media Management"
                 />
               </div>
-            </div>
-            <div class="swiper-slide hero-slide">
-              <div class="hero-content">
-                <h1>Заказ <span>Домиков и Беседок</span></h1>
-                <p>
-                  Откройте для себя лучшие места для отдыха. Забронируйте домики
-                  и беседки с удобствами для всей семьи.
-                </p>
-                <a href="#contact" class="button">Связаться с нами</a>
-              </div>
-              <div class="hero-media">
-                <img src="images/booking-house.jpg" alt="Заказ домиков" />
-              </div>
-            </div>
-          </div>
-          <div class="hero-swiper-pagination"></div>
-        </div>
-      </section>
-
-      <section class="section" id="about-us">
-        <div>
-          <h2 class="title">Почему <span>выбрать нас?</span></h2>
-          <div class="advantages-list">
-            <div class="advantage-item">
-              <img
-                src="./images/booking-online.jpg"
-                alt="Онлайн бронирование"
-              />
-              <h3>Онлайн бронирование</h3>
-              <p>
-                Удобное онлайн бронирование беседок и домиков. Забронируйте
-                место для отдыха в несколько кликов.
-              </p>
-            </div>
-
-            <div class="advantage-item">
-              <img src="./images/comfortable-stay.jpg" alt="Комфортный отдых" />
-              <h3>Комфортный отдых</h3>
-              <p>
-                Наслаждайтесь комфортом и уютом в наших домиках и беседках.
-                Идеальные условия для вашего отдыха.
-              </p>
-            </div>
-
-            <div class="advantage-item">
-              <img src="./images/nature.jpg" alt="Природа и спокойствие" />
-              <h3>Природа и спокойствие</h3>
-              <p>
-                Окунитесь в природу и спокойствие. Наши домики и беседки
-                расположены в живописных местах Казахстана.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section blog" id="blog">
-        <div class="container">
-          <div>
-            <h2 class="title">Новости и <span>обновления</span></h2>
-            <p class="descr">
-              Будьте в курсе последних новостей и обновлений по бронированию
-              беседок и домиков в Казахстане.
-            </p>
-          </div>
-          <ul class="blog-list">
-            <li class="blog-post">
-              <img
-                src="./images/booking-online.jpg"
-                alt="Онлайн бронирование"
-              />
-              <div class="blog-post-wrap">
-                <h3>Онлайн бронирование</h3>
-                <p>
-                  Узнайте, как легко и быстро забронировать беседку или домик
-                  онлайн через наш сайт.
-                </p>
-              </div>
+              <p>Social Media Management</p>
             </li>
-            <li class="blog-post">
-              <img src="./images/comfortable-stay.jpg" alt="Комфортный отдых" />
-              <div class="blog-post-wrap">
-                <h3>Комфортный отдых</h3>
-                <p>
-                  Откройте для себя комфортные условия проживания в наших
-                  домиках и беседках.
-                </p>
+            <li>
+              <div class="services-list-item-img">
+                <img
+                  src="./images/search-engine-opimization.png"
+                  alt="Search Engine Opimization"
+                />
               </div>
+              <p>Search Engine Opimization</p>
             </li>
-            <li class="blog-post">
-              <img src="./images/nature.jpg" alt="Природа и спокойствие" />
-              <div class="blog-post-wrap">
-                <h3>Природа и спокойствие</h3>
-                <p>
-                  Наслаждайтесь природой и спокойствием в наших живописных
-                  местах для отдыха.
-                </p>
+            <li>
+              <div class="services-list-item-img">
+                <img src="./images/design.png" alt="Design" />
               </div>
+              <p>Design</p>
             </li>
-
-            <li class="blog-post">
-              <img src="./images/family-time.jpg" alt="Время с семьей" />
-              <div class="blog-post-wrap">
-                <h3>Время с семьей</h3>
-                <p>
-                  Проведите незабываемое время с семьей в наших уютных домиках и
-                  беседках.
-                </p>
+            <li>
+              <div class="services-list-item-img">
+                <img src="./images/ads.png" alt="Ads" />
               </div>
-            </li>
-            <li class="blog-post">
-              <img
-                src="./images/booking-tips.jpg"
-                alt="Советы по бронированию"
-              />
-              <div class="blog-post-wrap">
-                <h3>Советы по бронированию</h3>
-                <p>
-                  Узнайте полезные советы по бронированию беседок и домиков для
-                  вашего идеального отдыха.
-                </p>
-              </div>
+              <p>Ads</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="section" id="services">
-        <div class="container">
-          <h2 class="title">Наши <span>Услуги</span></h2>
-          <div class="services-list">
-            <div class="service-item">
-              <img
-                src="images/booking-gazebo.png"
-                alt="Бронирование беседок"
-                class="service-img"
-              />
-              <h3>Бронирование беседок</h3>
-              <p>
-                Забронируйте уютные беседки для вашего отдыха в Казахстане.
-                Наслаждайтесь комфортом и природой.
-              </p>
-            </div>
+      section>div>p+h2+p
 
-            <div class="service-item">
-              <img
-                src="images/booking-house.png"
-                alt="Бронирование домиков"
-                class="service-img"
-              />
-              <h3>Бронирование домиков</h3>
-              <p>
-                Забронируйте комфортные домики для всей семьи. Идеальные условия
-                для вашего отдыха.
-              </p>
-            </div>
-
-            <div class="service-item">
-              <img
-                src="images/online-booking.png"
-                alt="Онлайн бронирование"
-                class="service-img"
-              />
-              <h3>Онлайн бронирование</h3>
-              <p>
-                Удобное онлайн бронирование беседок и домиков. Забронируйте
-                место для отдыха в несколько кликов.
-              </p>
-            </div>
-
-            <div class="service-item">
-              <img
-                src="images/comfortable-stay.png"
-                alt="Комфортный отдых"
-                class="service-img"
-              />
-              <h3>Комфортный отдых</h3>
-              <p>
-                Наслаждайтесь комфортом и уютом в наших домиках и беседках.
-                Идеальные условия для вашего отдыха.
-              </p>
-            </div>
-
-            <div class="service-item">
-              <img
-                src="images/nature.png"
-                alt="Природа и спокойствие"
-                class="service-img"
-              />
-              <h3>Природа и спокойствие</h3>
-              <p>
-                Окунитесь в природу и спокойствие. Наши домики и беседки
-                расположены в живописных местах Казахстана.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="faq" id="faq">
-        <div class="container faq-container">
-          <h2 class="title">Часто задаваемые вопросы</h2>
-          <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  Почему стоит выбрать KazRentals для бронирования?
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  KazRentals предлагает удобное онлайн бронирование беседок и
-                  домиков, комфортные условия для отдыха и живописные места в
-                  Казахстане.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Какие услуги предлагает KazRentals?
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  KazRentals предлагает бронирование беседок и домиков, онлайн
-                  бронирование, комфортный отдых и живописные места для вашего
-                  отдыха.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Как забронировать беседку или домик?
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Вы можете забронировать беседку или домик через наш сайт,
-                  выбрав удобные даты и заполнив форму бронирования.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  Какие преимущества предлагает KazRentals?
-                </button>
-              </h2>
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFour"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  KazRentals предлагает удобное онлайн бронирование, комфортные
-                  условия для отдыха, живописные места и доступные цены.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
-                  aria-expanded="false"
-                  aria-controls="collapseFive"
-                >
-                  Как связаться с KazRentals?
-                </button>
-              </h2>
-              <div
-                id="collapseFive"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFive"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Вы можете связаться с нами по телефону, электронной почте или
-                  заполнив форму на нашем сайте. Наши консультанты всегда готовы
-                  помочь вам.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="testimonials" id="testimonials">
-        <div class="container">
-          <h2 class="title">
-            Нас <span>рекомендуют</span> тысячи довольных клиентов в
-            <span>Казахстане</span>
-          </h2>
-          <p class="descr">
-            Узнайте истории наших клиентов, которые доверились KazRentals для
-            бронирования беседок и домиков.
-          </p>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/aliya-nurbekova.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Алия Нурбекова</h3>
-                    <p class="testimonials-location">Алматы, Казахстан</p>
-                  </div>
-                </div>
-                <p class="testimonials-response">
-                  “KazRentals помог мне забронировать уютную беседку для отдыха.
-                  Отличный сервис и удобное онлайн бронирование.”
-                </p>
-              </div>
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/yerzhan-kasymov.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Ержан Касымов</h3>
-                    <p class="testimonials-location">Нур-Султан, Казахстан</p>
-                  </div>
-                </div>
-                <p class="testimonials-response">
-                  “Благодаря KazRentals, я смог забронировать домик для всей
-                  семьи. Удобный сайт и отличные условия.”
-                </p>
-              </div>
-
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/gulmira-sadykova.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Гульмира Садыкова</h3>
-                    <p class="testimonials-location">Шымкент, Казахстан</p>
-                  </div>
-                </div>
-                <p class="testimonials-response">
-                  “Работа с KazRentals была приятной и легкой. Забронировала
-                  беседку в живописном месте. Рекомендую!”
-                </p>
-              </div>
-
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/marat-zhumabekov.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Марат Жумабеков</h3>
-                    <p class="testimonials-location">Караганда, Казахстан</p>
-                  </div>
-                </div>
-                <p class="testimonials-response">
-                  “KazRentals стал нашим надежным партнером в бронировании
-                  домиков. Удобный сервис и отличные условия.”
-                </p>
-              </div>
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/aigul-tursunova.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Айгуль Турсунова</h3>
-                    <p class="testimonials-location">Актобе, Казахстан</p>
-                  </div>
-                </div>
-                <p class="testimonials-response">
-                  “С помощью KazRentals я смогла забронировать домик для отдыха.
-                  Отличный сервис и удобное онлайн бронирование.”
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-pagination-wrap">
-            <div class="swiper-button-prev">
-              <svg
-                width="20"
-                height="18"
-                viewBox="0 0 20 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next">
-              <svg
-                width="20"
-                height="18"
-                viewBox="0 0 20 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
+      <section class="contact-section" id="contact">
         <div class="container">
           <h2 class="title">Свяжитесь с нами</h2>
-          <p class="descr">
-            Заполните форму, и наши консультанты свяжутся с вами для уточнения
-            деталей.
-          </p>
-          <div class="contact-wrap">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.0428753004385!2d71.42324437701923!3d51.12611717172916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841f833db1cf%3A0x7634399daf1f36d5!2z0JTQvtGB0YLRi9KbINC606nRiNC10YHRliAxMiwg0JDRgdGC0LDQvdCwIDAyMDAwMCwg0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1suk!2spl!4v1741099829747!5m2!1suk!2spl"
-              width="100%"
-              height="700"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <div class="contact-wrapper">
-              <div class="contact-info">
-                <h3>Контактные данные</h3>
-                <p><strong>Адрес:</strong> г. Нур-Султан, ул. Достык, 12</p>
-                <p><strong>Телефон:</strong> +7 (777) 123-45-67</p>
-                <p>
-                  <strong>Email:</strong>
-                  <a href="mailto:info@plannermaster.kz"
-                    >info@plannermaster.kz</a
-                  >
-                </p>
-              </div>
-              <form id="contact-form" class="contact-form">
-                <div class="input-group">
-                  <label for="name">Имя</label>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Контактная информация</h3>
+              <p><strong>Телефон:</strong> +7 771 7051 111</p>
+              <p>
+                <strong>Адрес:</strong> Abay Ave 164, Almaty 050000, Kazakhstan
+              </p>
+              <p>
+                <strong>Электронная почта:</strong>
+                <a href="mailto:info@bazarosta.com">info@bazarosta.com</a>
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d555.507831490084!2d76.87980005558332!3d43.23688615319821!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883690ee29c808d%3A0xad0008586a665dd6!2sAbay%20Ave%20164%2C%20Almaty%20050000%2C%20Kazakhstan!5e0!3m2!1sen!2sus!4v1742415705507!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="contact-map"
+              ></iframe>
+            </div>
+            <div class="contact-form">
+              <h3>Отправьте нам сообщение</h3>
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="first-name">Имя</label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
+                    id="first-name"
+                    name="first-name"
                     required
-                    placeholder="Введите ваше имя"
+                    pattern="[A-Za-zА-Яа-яЁё\s]{2,}"
+                    title="Имя должно содержать хотя бы 2 буквы"
                   />
                 </div>
-                <div class="input-group">
-                  <label for="surname">Фамилия</label>
+                <div class="form-group">
+                  <label for="last-name">Фамилия</label>
                   <input
                     type="text"
-                    id="surname"
-                    name="surname"
+                    id="last-name"
+                    name="last-name"
                     required
-                    placeholder="Введите вашу фамилию"
+                    pattern="[A-Za-zА-Яа-яЁё\s]{2,}"
+                    title="Фамилия должна содержать хотя бы 2 буквы"
                   />
                 </div>
-                <div class="input-group">
+                <div class="form-group">
+                  <label for="phone">Телефон</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    pattern="\+?[0-9\s\-\(\)]{7,}"
+                    title="Введите правильный номер телефона"
+                  />
+                </div>
+                <div class="form-group">
                   <label for="email">Электронная почта</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
-                    placeholder="Введите вашу электронную почту"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Введите правильный адрес электронной почты"
                   />
                 </div>
-                <div class="input-group">
-                  <label for="phone">Номер телефона</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    placeholder="+7 (___) ___-__-__"
-                  />
-                </div>
-                <button type="submit" class="button">Отправить заявку</button>
+                <button type="submit" class="primary-btn">Отправить</button>
               </form>
             </div>
           </div>
@@ -608,53 +237,57 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-container">
-        <nav class="footer-nav">
+      <div class="container">
+        <div class="footer-menu">
+          <p>Меню</p>
           <ul>
-            <li><a href="booking.html">Бронирование</a></li>
-            <li><a href="cottages.html">Наши домики</a></li>
-            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./pricing.html">Цены</a></li>
+            <li><a href="./blog.html">Блог</a></li>
+            <li><a href="./our-services.html">Наши услуги</a></li>
+            <li><a href="./index.html#faq">FAQ</a></li>
+            <a href="./contact.html">Связаться</a>
           </ul>
+        </div>
+        <div class="footer-menu">
+          <p>Сервисные страницы</p>
           <ul>
             <li>
-              <a href="privacy-policy.html">Политика конфиденциальности</a>
+              <a href="./cookie-policy.html">Политика использования cookie</a>
             </li>
-            <li><a href="terms-of-use.html">Условия использования</a></li>
             <li>
-              <a href="cookie-policy.html"
-                >Политика в отношении файлов cookie</a
-              >
+              <a href="./privacy-policy.html">Политика конфиденциальности</a>
             </li>
+            <li><a href="./terms-of-use.html">Условия использования</a></li>
           </ul>
-        </nav>
-
+        </div>
         <div class="footer-contact">
-          <p><strong>📍 Адрес:</strong> ул. Достык, 25, Алматы, Казахстан</p>
-          <p><strong>📞 Телефон:</strong> +7 727 345 67 89</p>
+          <h3>Контактная информация</h3>
+          <p><strong>Телефон:</strong> +7 771 7051 111</p>
+          <p><strong>Адрес:</strong> Abay Ave 164, Almaty 050000, Kazakhstan</p>
           <p>
-            <strong>📧 Email:</strong>
-            <a href="mailto:info@plannermaster.kz">info@plannermaster.kz</a>
+            <strong>Email:</strong>
+            <a href="mailto:info@bazarosta.com">info@bazarosta.com</a>
           </p>
         </div>
       </div>
-
-      <div class="footer-wrap">
-        <p class="footer-right">© 2025 KazRentals. Все права защищены.</p>
-      </div>
+      <p class="footer-rights">© Все права защищены 2025</p>
     </footer>
 
-    <div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-popup" id="cookiePopup">
       <div class="cookie-popup-content">
+        <h2>Использование файлов cookie</h2>
         <p>
-          Мы используем файлы cookie, чтобы обеспечить наилучший опыт просмотра
-          на нашем сайте. Продолжая просмотр, вы соглашаетесь с использованием
-          куки.
+          Мы используем файлы cookie для улучшения вашего опыта на нашем сайте.
+          Продолжая просмотр, вы соглашаетесь с нашим
+          <a href="./cookie-policy.html">использованием файлов cookie.</a>
         </p>
-        <button id="accept-cookie" class="button">Принять</button>
+        <button class="cookie-btn" id="acceptCookies">Принять</button>
       </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
   </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
 </html>
