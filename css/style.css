@@ -106,7 +106,7 @@
   .close-btn svg {
     width: 25px;
     height: 25px;
-    fill: var(--secondary-background);
+    fill: #fff;
   }
 
   .close-btn:active svg {
@@ -253,6 +253,7 @@
   }
 
   .hero-curve-wrap {
+    display: none;
     left: 50%;
     transform: translateX(-50%);
     top: -100px;
