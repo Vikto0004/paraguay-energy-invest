@@ -1,0 +1,34 @@
+.blog {
+  padding: 140px 0 100px;
+}
+
+.blog-meta {
+  margin-bottom: 56px;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.blog-img {
+  border-radius: var(--border-radius);
+  max-width: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-content .blog-list {
+  max-width: 600px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+

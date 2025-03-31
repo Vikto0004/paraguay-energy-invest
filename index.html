@@ -1,499 +1,485 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KazGrowth Consulting</title>
+    <meta name="keywords" content="" />
+    <title>AxonIA</title>
     <link rel="icon" href="images/logo.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
   <body>
     <header class="header">
-      <div class="header-wrap">
-        <a href="index.html" class="logo">
-          <img
-            class="header-logo"
-            src="./images/logo.png"
-            alt="Logo de la Empresa"
-          />
-          KazGrowth Consulting
-        </a>
-      </div>
+      <a class="logo" href="./index.html">
+        <img src="./images/logo.png" alt="AxonIA" />AxonIA
+      </a>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><a href="#blog">Блог</a></li>
-          <li><a href="#contact">Контакты</a></li>
-          <li><a href="#faq">Часто задаваемые вопросы</a></li>
-          <li><a href="investment-opportunities.html">Инвестиции</a></li>
-          <li>
-            <a href="case-studies.html">Кейсы</a>
-          </li>
-          <li>
-            <a href="our-services.html">Наши услуги</a>
-          </li>
-          <li>
-            <a href="about-us.html">О нас</a>
-          </li>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./index.html#why-choose">Pourquoi nous choisir ?</a></li>
+          <li><a href="./index.html#about-us">À propos de nous</a></li>
+          <li><a href="./index.html#reviews">Avis</a></li>
+          <li><a href="./index.html#our-blog">Blog</a></li>
+          <li><a href="./index.html#faq">FAQ</a></li>
         </ul>
+        <a class="secondary-btn" href="./index.html#contact">Contact</a>
       </nav>
+      <button class="burger-btn burgerBtn">
+        <svg>
+          <use href="./images/sprite.svg#burger"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu mobileMenu">
+        <button class="close-btn closeBtn">
+          <svg>
+            <use href="./images/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a class="mobile-nav-link" href="./index.html">Accueil</a></li>
+            <li>
+              <a class="mobile-nav-link" href="./index.html#why-choose"
+                >Pourquoi nous choisir ?</a
+              >
+            </li>
+            <li>
+              <a class="mobile-nav-link" href="./index.html#about-us"
+                >À propos de nous</a
+              >
+            </li>
+            <li>
+              <a class="mobile-nav-link" href="./index.html#reviews">Avis</a>
+            </li>
+            <li>
+              <a class="mobile-nav-link" href="./index.html#our-blog">Blog</a>
+            </li>
+            <li><a class="mobile-nav-link" href="./index.html#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <a class="primary-btn mobile-nav-link" href="./index.html#contact"
+          >Contact</a
+        >
+      </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="swiper mySwiperHero">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide hero-slide">
-              <div class="hero-content">
-                <h1>Развитие бизнеса в Казахстане</h1>
-                <p>
-                  Мы помогаем компаниям расти и выходить на новый уровень,
-                  предлагая экспертные решения в сфере консалтинга.
-                </p>
-                <a href="#contact" class="cookie-btn" type="button"
-                  >Связаться с нами</a
-                >
-              </div>
-              <div class="hero-media">
-                <img
-                  src="images/business-growth-kz.jpg"
-                  alt="Развитие бизнеса в Казахстане"
-                />
-              </div>
-            </div>
-            <div class="swiper-slide hero-slide">
-              <div class="hero-content">
-                <h1>Экспертные стратегии для вашего успеха</h1>
-                <p>
-                  Наши специалисты разрабатывают индивидуальные стратегии роста,
-                  помогая вам достичь устойчивого успеха.
-                </p>
-                <a href="#contact" class="cookie-btn" type="button"
-                  >Узнать больше</a
-                >
-              </div>
-              <div class="hero-media">
-                <img src="images/strategy-kz.jpg" alt="Экспертные стратегии" />
-              </div>
-            </div>
-            <div class="swiper-slide hero-slide">
-              <div class="hero-content">
-                <h1>Инвестиции и партнёрство</h1>
-                <p>
-                  Открываем новые возможности для роста через инвестиции и
-                  стратегическое партнёрство в Казахстане.
-                </p>
-                <a href="#contact" class="cookie-btn" type="button"
-                  >Начать сотрудничество</a
-                >
-              </div>
-              <div class="hero-media">
-                <img
-                  src="images/investments-kz.jpg"
-                  alt="Инвестиции в Казахстане"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="hero-swiper-pagination"></div>
-        </div>
-      </section>
-
-      <section class="section" id="about-us">
-        <div>
-          <h2 class="title">Почему выбирают нас?</h2>
-          <div class="advantages-list">
-            <div class="advantage-item">
-              <img src="./images/experience.png" alt="Опыт и экспертиза" />
-              <h3>Эксперты в развитии бизнеса</h3>
-              <p>
-                Наша команда обладает глубокими знаниями и опытом в сфере
-                бизнес-консалтинга, помогая компаниям достигать роста и
-                эффективности.
-              </p>
-            </div>
-
-            <div class="advantage-item">
-              <img
-                src="./images/solutions.png"
-                alt="Индивидуальные стратегии"
-              />
-              <h3>Индивидуальные стратегии развития</h3>
-              <p>
-                Мы разрабатываем персонализированные решения для бизнеса,
-                учитывая специфику казахстанского рынка и ваши цели.
-              </p>
-            </div>
-
-            <div class="advantage-item">
-              <img src="./images/trust.png" alt="Доверие и успех" />
-              <h3>Доверие партнеров и клиентов</h3>
-              <p>
-                Наши клиенты — успешные предприниматели и компании, которые
-                добились значительных результатов благодаря нашим консультациям.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="blog">
         <div class="container">
-          <div>
-            <h2 class="title">Новости и стратегии бизнес-развития</h2>
+          <div class="hero-content" data-aos="fade-up-right">
+            <h1 class="hero-title">
+              <span>Dive</span> Into The Depths Of
+              <span>Virtual Reality</span>
+            </h1>
             <p class="descr">
-              Следите за последними трендами в бизнесе Казахстана, изучайте
-              экспертные стратегии роста и находите новые возможности для
-              развития вашего дела.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget.
+              Lectus mauris eros in vitae.
+            </p>
+            <button
+              class="primary-btn"
+              onclick="window.location.href = './index.html#contact'"
+            >
+              BUILD YOUR WORLD
+            </button>
+          </div>
+          <div class="hero-wrapper">
+            <img src="./images/hero.jpg" data-aos="zoom-in" alt="hero" />
+            <div class="hero-curve-wrap">
+              <svg class="curve-icon">
+                <use xlink:href="./images/sprite.svg#curve"></use>
+              </svg>
+              <svg class="curve2-icon">
+                <use xlink:href="./images/sprite.svg#curve2"></use>
+              </svg>
+              <svg class="curve3-icon">
+                <use xlink:href="./images/sprite.svg#curve3"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us" id="about-us">
+        <div class="container">
+          <div class="about-us-wrapper">
+            <div class="container-title" data-aos="fade-right">
+              <h2 class="title">INTRODUCTION <span>TO HYDRA VR</span></h2>
+              <div class="container-title-line">
+                <svg>
+                  <use href="./images/sprite.svg#line-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="descr" data-aos="fade-left">
+              Vitae sapien pellentesque habitant morbi tristique senectus et
+              netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+              lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+              nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+              est placerat in. Lectus magna fringilla urna porttitor rhoncus
+              vitae.
             </p>
           </div>
-          <ul class="blog-list">
-            <li class="blog-post">
-              <img
-                src="./images/business-growth.jpg"
-                alt="Стратегии роста бизнеса в 2025 году"
-              />
-              <h3>Стратегии роста бизнеса в 2025 году</h3>
-              <p>
-                Узнайте, какие методы и инструменты помогут вашему бизнесу расти
-                и адаптироваться к изменяющимся условиям рынка.
+          <div class="about-us-content">
+            <img
+              class="about-us-img"
+              src="./images/about-us-ai.jpg"
+              alt="about us"
+              data-aos="flip-left"
+            />
+            <div class="about-us-text" data-aos="flip-right">
+              <h2 class="title"><span>ABOUT</span>HYDRA VR</h2>
+              <p class="descr">
+                Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
+                mattis rhoncus urna neque viverra justo. Vivamus at augue eget
+                arcu dictum. Ultrices gravida dictum fusce ut placerat orci.
+                Aenean et tortor at risus viverra adipiscing at in. Mattis
+                aliquam faucibus purus in massa. Est placerat in egestas erat
+                imperdiet sed. Consequat semper viverra nam libero justo laoreet
+                sit amet. Aliquam etiam erat velit scelerisque in dictum non
+                consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec
+                ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet
+                nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n
+                tempor.
               </p>
-            </li>
-            <li class="blog-post">
-              <img
-                src="./images/kazakhstan-market.jpg"
-                alt="Особенности рынка Казахстана для предпринимателей"
-              />
-              <h3>Особенности рынка Казахстана для предпринимателей</h3>
-              <p>
-                Разбираем ключевые факторы, влияющие на бизнес в Казахстане, и
-                даем рекомендации по успешному развитию.
-              </p>
-            </li>
-            <li class="blog-post">
-              <img
-                src="./images/investment-opportunities.jpg"
-                alt="Инвестиционные возможности для малого и среднего бизнеса"
-              />
-              <h3>Инвестиционные возможности для малого и среднего бизнеса</h3>
-              <p>
-                Как привлечь инвестиции в ваш бизнес и использовать доступные
-                программы поддержки предпринимательства?
-              </p>
-            </li>
-            <li class="blog-post">
-              <img
-                src="./images/digital-transformation.jpg"
-                alt="Цифровая трансформация: будущее бизнеса"
-              />
-              <h3>Цифровая трансформация: будущее бизнеса</h3>
-              <p>
-                Как современные технологии помогают компаниям автоматизировать
-                процессы и повышать эффективность?
-              </p>
-            </li>
-            <li class="blog-post">
-              <img
-                src="./images/laws-regulations.jpg"
-                alt="Как изменения в законодательстве влияют на бизнес?"
-              />
-              <h3>Как изменения в законодательстве влияют на бизнес?</h3>
-              <p>
-                Новые правила, законы и регуляции в Казахстане: чего ожидать
-                предпринимателям?
-              </p>
-            </li>
-            <li class="blog-post">
-              <img
-                src="./images/business-networking.jpg"
-                alt="Секреты успешного бизнес-нетворкинга"
-              />
-              <h3>Секреты успешного бизнес-нетворкинга</h3>
-              <p>
-                Как находить новых партнеров, клиентов и инвесторов для роста
-                вашей компании?
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section commitment" id="commitment">
-        <div class="container">
-          <h2 class="title">Наши Принципы</h2>
-          <p class="descr">
-            В <strong>KazGrowth Consulting</strong> мы помогаем бизнесу в
-            Казахстане находить новые точки роста, разрабатывать успешные
-            стратегии и внедрять эффективные управленческие решения. Наши
-            принципы основаны на прозрачности, инновациях и стремлении к
-            устойчивому развитию.
-          </p>
-          <ul class="commitment-list">
-            <li>
-              <img src="./images/check.png" alt="check" />
-              <p>
-                <strong>Прозрачность и доверие:</strong> Открытый подход к
-                разработке стратегий и поддержка клиентов на каждом этапе
-                развития бизнеса.
-              </p>
-            </li>
-            <li>
-              <img src="./images/check.png" alt="check" />
-              <p>
-                <strong>Инновационные решения:</strong> Используем современные
-                методы аналитики и цифровые инструменты для роста и
-                масштабирования бизнеса.
-              </p>
-            </li>
-            <li>
-              <img src="./images/check.png" alt="check" />
-              <p>
-                <strong>Ориентация на результат:</strong> Мы фокусируемся на
-                достижении конкретных бизнес-целей и увеличении эффективности
-                компаний.
-              </p>
-            </li>
-            <li>
-              <img src="./images/check.png" alt="check" />
-              <p>
-                <strong>Локальная экспертиза:</strong> Глубокое понимание рынка
-                Казахстана и его особенностей позволяет разрабатывать стратегии,
-                адаптированные к реалиям страны.
-              </p>
-            </li>
-            <li>
-              <img src="./images/check.png" alt="check" />
-              <p>
-                <strong>Развитие предпринимательского сообщества:</strong>
-                Поддержка стартапов, малого и среднего бизнеса через
-                образовательные программы и консультации.
-              </p>
-            </li>
-            <li>
-              <img src="./images/check.png" alt="check" />
-              <p>
-                <strong>Долгосрочное партнёрство:</strong> Мы стремимся строить
-                прочные взаимоотношения с клиентами, помогая им достигать
-                устойчивого роста.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" id="services">
-        <div class="container">
-          <h2 class="title">Наши услуги</h2>
-          <div class="services-list">
-            <div class="service-item">
-              <img
-                src="images/estrategias-inversiones-revolut.png"
-                alt="Разработка бизнес-стратегий"
-                class="service-img"
-              />
-              <h3>Разработка бизнес-стратегий</h3>
-              <p>
-                Создаем индивидуальные стратегии роста для компаний в
-                Казахстане, помогая находить новые точки роста и повышать
-                эффективность бизнеса.
-              </p>
+              <a class="primary-btn" href="./index.html#contact"
+                >LET’S GET IN TOUCH</a
+              >
             </div>
-            <div class="service-item">
-              <img
-                src="images/analisis-financiero-revolut.png"
-                alt="Анализ рынка и конкурентов"
-                class="service-img"
-              />
-              <h3>Анализ рынка и конкурентов</h3>
-              <p>
-                Проводим детальный анализ рынка, выявляем сильные и слабые
-                стороны конкурентов, чтобы разработать оптимальные решения для
-                вашего бизнеса.
-              </p>
-            </div>
-            <div class="service-item">
-              <img
-                src="images/business-optimization.png"
-                alt="Оптимизация бизнес-процессов"
-                class="service-img"
-              />
-              <h3>Оптимизация бизнес-процессов</h3>
-              <p>
-                Помогаем внедрять эффективные процессы, автоматизировать
-                операции и снижать затраты для устойчивого развития компании.
-              </p>
-            </div>
-            <div class="service-item">
-              <img
-                src="images/gestion-proyectos-revolut.png"
-                alt="Консалтинг по инвестициям"
-                class="service-img"
-              />
-              <h3>Консалтинг по инвестициям</h3>
-              <p>
-                Подбираем лучшие инвестиционные возможности, помогаем привлекать
-                финансирование и выстраивать стратегии масштабирования бизнеса.
-              </p>
-            </div>
+          </div>
+          <div class="about-us-curve">
+            <svg class="about-us-curve5">
+              <use href="./images/sprite.svg#curve4"></use>
+            </svg>
+            <svg class="about-us-curve4">
+              <use href="./images/sprite.svg#curve5"></use>
+            </svg>
           </div>
         </div>
       </section>
 
-      <section class="investmentChart">
-        <h2 class="title">
-          Инвестиции в развитие бизнеса в Казахстане и Прогнозы Рынка
-        </h2>
-        <p class="descr">
-          Эта секция представляет общий объем инвестиций в развитие бизнеса в
-          Казахстане, а также прогнозы по росту ключевых секторов и трендам на
-          рынке. Мы анализируем не только изменения в экономике страны, но и
-          развитие новых бизнес-инициатив и возможностей для инвесторов в
-          Казахстане.
-        </p>
-        <div class="container"><canvas id="businessGrowthChart"></canvas></div>
+      <section class="why-choose" id="why-choose">
+        <div class="container">
+          <div class="why-choose-wrapper">
+            <div class="container-title" data-aos="fade-right">
+              <h2 class="title">WHY BUILD <span>WITH HYDRA?</span></h2>
+              <div class="container-title-line">
+                <svg>
+                  <use href="./images/sprite.svg#line-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="descr" data-aos="fade-left">
+              Vitae sapien pellentesque habitant morbi tristique senectus et
+              netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+              lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+              nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+              est placerat in. Lectus magna fringilla urna porttitor rhoncus
+              vitae.
+            </p>
+          </div>
+          <div class="why-choose-content swiper mySwiper" data-aos="zoom-in-up">
+            <ul class="why-choose-list swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="why-choose-list-wrap">
+                  <img src="./images/simulation.jpg" alt="simulation" />
+                </div>
+                <h3 class="subtitle">SIMULATION</h3>
+                <div class="why-choose-list-line"></div>
+                <p class="why-choose-descr">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+              </li>
+              <li class="swiper-slide">
+                <div class="why-choose-list-wrap">
+                  <img src="./images/education.jpg" alt="education" />
+                </div>
+                <h3 class="subtitle">EDUCATION</h3>
+                <div class="why-choose-list-line"></div>
+                <p class="why-choose-descr">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+              </li>
+              <li class="swiper-slide">
+                <div class="why-choose-list-wrap">
+                  <img src="./images/self-care.jpg" alt="self-care" />
+                </div>
+                <h3 class="subtitle">SELF-CARE</h3>
+                <div class="why-choose-list-line"></div>
+                <p class="why-choose-descr">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+              </li>
+              <li class="swiper-slide">
+                <div class="why-choose-list-wrap">
+                  <img src="./images/outdoor.jpg" alt="outdoor" />
+                </div>
+                <h3 class="subtitle">OUTDOOR</h3>
+                <div class="why-choose-list-line"></div>
+                <p class="why-choose-descr">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+              </li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
       </section>
 
-      <section class="testimonials" id="testimonials">
+      <section class="trigger">
         <div class="container">
-          <h2 class="title">
-            Нас рекомендуют тысячи довольных клиентов по всему Казахстану
+          <div class="trigger-content">
+            <h2 class="title">
+              TECHNOLOGIES & HARDWARE<span>USED BY HYDRA VR.</span>
+            </h2>
+            <a class="trigger-link" href="./index.html#contact"
+              ><svg>
+                <use href="./images/sprite.svg#check-mark"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-services" id="our-services">
+        <div class="container">
+          <div class="why-choose-wrapper">
+            <div class="container-title" data-aos="fade-right">
+              <h2 class="title">HOW WE BUILD <span>WITH HYDRA VR?</span></h2>
+              <div class="container-title-line">
+                <svg>
+                  <use href="./images/sprite.svg#line-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="descr" data-aos="fade-left">
+              Vitae sapien pellentesque habitant morbi tristique senectus et
+              netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+              lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+              nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+              est placerat in. Lectus magna fringilla urna porttitor rhoncus
+              vitae.
+            </p>
+          </div>
+          <div class="swiper mySwiper" data-aos="zoom-in">
+            <ul class="our-services-list swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="our-services-list-wrap"><p>01</p></div>
+                <h3 class="subttile">3D Conception & Design</h3>
+              </li>
+              <li class="swiper-slide">
+                <div class="our-services-list-wrap"><p>02</p></div>
+                <h3 class="subttile">Interaction Design</h3>
+              </li>
+              <li class="swiper-slide">
+                <div class="our-services-list-wrap"><p>03</p></div>
+                <h3 class="subttile">VR World User Testing</h3>
+              </li>
+              <li class="swiper-slide">
+                <div class="our-services-list-wrap"><p>04</p></div>
+                <h3 class="subttile">Hydra VR Deploy</h3>
+              </li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <svg class="our-services-curve">
+            <use href="./images/sprite.svg#curve6"></use>
+          </svg>
+        </div>
+      </section>
+
+      <section class="our-blog" id="our-blog">
+        <div class="container">
+          <div class="why-choose-wrapper">
+            <div class="container-title" data-aos="fade-right">
+              <h2 class="title">FIND OUT OUR <span>LATEST NEWS</span></h2>
+              <div class="container-title-line">
+                <svg>
+                  <use href="./images/sprite.svg#line-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="descr" data-aos="fade-left">
+              Vitae sapien pellentesque habitant morbi tristique senectus et
+              netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+              lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+              nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+              est placerat in. Lectus magna fringilla urna porttitor rhoncus
+              vitae.
+            </p>
+          </div>
+          <ul class="our-blog-list" data-aos="flip-up">
+            <li>
+              <img
+                class="our-blog-list-img"
+                src="./images/ai-trends.jpg"
+                alt="ai-trends"
+              />
+              <div class="our-blog-list-wrap">
+                <h3 class="subtitle">AI Trends</h3>
+                <div class="our-blog-list-line"></div>
+                <p class="descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="./blog/ai-trends.html" class="secondary-btn"
+                  >Learn More</a
+                >
+              </div>
+            </li>
+            <li>
+              <img
+                class="our-blog-list-img"
+                src="./images/ai-applications.jpg"
+                alt="applications"
+              />
+              <div class="our-blog-list-wrap">
+                <h3 class="subtitle">Applications</h3>
+                <div class="our-blog-list-line"></div>
+                <p class="descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="./blog/ai-applications.html" class="secondary-btn"
+                  >Learn More</a
+                >
+              </div>
+            </li>
+            <li>
+              <img
+                class="our-blog-list-img"
+                src="./images/ai-ethics.jpg"
+                alt="ai-ethics"
+              />
+              <div class="our-blog-list-wrap">
+                <h3 class="subtitle">AI Ethics</h3>
+                <div class="our-blog-list-line"></div>
+                <p class="descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="./blog/ai-ethics.html" class="secondary-btn"
+                  >Learn More</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2 data-aos="zoom-out-up" class="title">
+            Questions Fréquemment Posées
           </h2>
-          <p class="descr">
-            Ознакомьтесь с историями наших клиентов, которые доверились
-            KazGrowth Consulting для развития бизнеса и улучшения своих
-            результатов на казахстанском рынке.
-          </p>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/client-1.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Алия Нурмаганбетова</h3>
-                    <p class="testimonials-location">Алматы, Казахстан</p>
-                  </div>
+          <div data-aos="zoom-out" class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Qu'est-ce que l'intelligence artificielle ?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  L'intelligence artificielle (IA) est un domaine de
+                  l'informatique qui vise à créer des systèmes capables de
+                  simuler l'intelligence humaine, comme la reconnaissance
+                  vocale, la prise de décision et l'apprentissage automatique.
                 </div>
-                <p class="testimonials-response">
-                  “KazGrowth Consulting помогли нам выстроить успешную стратегию
-                  для расширения бизнеса в Казахстане. Благодаря их
-                  профессионализму, мы увеличили оборот на 40%.”
-                </p>
-              </div>
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/client-5.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Серикжан Тулегенов</h3>
-                    <p class="testimonials-location">Шымкент, Казахстан</p>
-                  </div>
-                </div>
-                <p class="testimonials-response">
-                  “Благодаря консультациям KazGrowth Consulting я смог успешно
-                  вывести свой бизнес на новый уровень, расширив рынок в
-                  Казахстане.”
-                </p>
-              </div>
-
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/client-3.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Айдана Жамалбекова</h3>
-                    <p class="testimonials-location">Астана, Казахстан</p>
-                  </div>
-                </div>
-                <p class="testimonials-response">
-                  “Работа с KazGrowth Consulting была решающим шагом в развитии
-                  моего бизнеса. Их глубокое понимание рынка Казахстана помогло
-                  мне выстроить эффективную стратегию.”
-                </p>
-              </div>
-
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/client-2.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Бауржан Сулейменов</h3>
-                    <p class="testimonials-location">Караганда, Казахстан</p>
-                  </div>
-                </div>
-                <p class="testimonials-response">
-                  “KazGrowth Consulting стали нашими настоящими партнерами в
-                  процессе роста бизнеса в Казахстане. Их опыт в развитии
-                  бизнеса неоценим.”
-                </p>
-              </div>
-              <div class="swiper-slide testimonials-slide">
-                <div class="testimonials-wrap">
-                  <img src="./images/client-4.jpg" alt="клиент" />
-                  <div class="testimonials-wrapper">
-                    <h3 class="testimonials-name">Гульнар Токмагамбетова</h3>
-                    <p class="testimonials-location">Тараз, Казахстан</p>
-                  </div>
-                </div>
-                <p class="testimonials-response">
-                  “С помощью KazGrowth Consulting я смогла значительно улучшить
-                  свою бизнес-стратегию в Казахстане и достичь отличных
-                  результатов.”
-                </p>
               </div>
             </div>
-          </div>
-
-          <div class="swiper-pagination-wrap">
-            <div class="swiper-pagination"></div>
-            <div class="swiper-buttons">
-              <div class="swiper-button-prev">
-                <svg
-                  width="20"
-                  height="18"
-                  viewBox="0 0 20 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
                 >
-                  <path
-                    d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
-                    fill="white"
-                  />
-                </svg>
+                  Comment l'IA est-elle utilisée aujourd'hui ?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  L'IA est utilisée dans de nombreux domaines, notamment
+                  l'analyse de données, les assistants virtuels, la
+                  reconnaissance d'images, et l'automatisation des processus
+                  industriels.
+                </div>
               </div>
-              <div class="swiper-button-next">
-                <svg
-                  width="20"
-                  height="18"
-                  viewBox="0 0 20 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
                 >
-                  <path
-                    d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
-                    fill="white"
-                  />
-                </svg>
+                  Quels sont les avantages de l'IA ?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  L'IA permet d'améliorer l'efficacité, de réduire les coûts, et
+                  de résoudre des problèmes complexes plus rapidement. Elle
+                  offre également des opportunités pour l'innovation dans divers
+                  secteurs.
+                </div>
               </div>
             </div>
           </div>
@@ -502,145 +488,150 @@
 
       <section class="contact" id="contact">
         <div class="container">
-          <h2 class="title">Связаться с нами</h2>
-          <p class="descr">
-            Заполните форму, и наши консультанты свяжутся с вами.
-          </p>
-          <div class="contact-wrap">
-            <div class="contact-wrapper">
-              <div class="contact-info">
-                <h3>Контактные данные</h3>
-                <p>
-                  <strong>Адрес:</strong> ул. Тимирязева 52, 010000 Нур-Султан,
-                  Казахстан
-                </p>
-                <p><strong>Телефон:</strong> +7 777 123 4567</p>
-                <p>
-                  <strong>Email:</strong>
-                  <a href="mailto:contact@kazgrowth.com"
-                    >contact@kazgrowth.com</a
-                  >
-                </p>
-              </div>
-              <form id="contact-form" class="contact-form">
-                <div class="input-group">
-                  <label for="name">Полное имя</label>
+          <h2 data-aos="fade-down-right" class="title">Contactez-nous</h2>
+          <div class="contact-content">
+            <div data-aos="fade-right" class="contact-info">
+              <h3>Informations de Contact</h3>
+              <p><strong>Téléphone :</strong> +1 5144 884 011</p>
+              <p>
+                <strong>Adresse :</strong> 5403 Côte Saint Luc Rd, Montreal,
+                Quebec H3X 2C3, Canada
+              </p>
+              <p>
+                <strong>Email :</strong>
+                <a href="mailto:info@axonai.com">info@axonai.com</a>
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d240.50650318161755!2d-73.62451500875378!3d45.47948241517995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9175392c24f59%3A0xbc2843c7d3f3a741!2s5395%20C%C3%B4te%20Saint%20Luc%20Rd%20%23100%2C%20Montreal%2C%20QC%20H3X%202C3%2C%20Canada!5e0!3m2!1sen!2sus!4v1742933246973!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="contact-map"
+              ></iframe>
+            </div>
+            <div data-aos="fade-left" class="contact-form-wrapper">
+              <h3>Envoyez-nous un message</h3>
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="first-name">Prénom</label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
+                    id="first-name"
+                    name="first-name"
                     required
-                    placeholder="Введите ваше имя"
+                    pattern="[A-Za-zÀ-ÿ\s]{2,}"
+                    title="Le prénom doit contenir au moins 2 lettres"
                   />
                 </div>
-
-                <div class="input-group">
+                <div class="form-group">
+                  <label for="last-name">Nom</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required
+                    pattern="[A-Za-zÀ-ÿ\s]{2,}"
+                    title="Le nom doit contenir au moins 2 lettres"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Téléphone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    pattern="\+?[0-9\s\-\(\)]{7,}"
+                    title="Entrez un numéro de téléphone valide"
+                  />
+                </div>
+                <div class="form-group">
                   <label for="email">Email</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
-                    placeholder="Введите ваш email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Entrez une adresse email valide"
                   />
                 </div>
-
-                <div class="input-group">
-                  <label for="phone">Номер телефона</label>
-                  <input type="tel" id="phone" name="phone" required />
-                </div>
-
-                <button type="submit" class="submit-btn">
-                  Отправить запрос
-                </button>
+                <button type="submit" class="primary-btn">Envoyer</button>
               </form>
             </div>
-
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.511548375225!2d71.41061477702254!3d51.19122507174316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424580caa5f54e91%3A0x9a74f07af5165209!2z0KvQsdGL0YDQsNC5INCQ0LvRgtGL0L3RgdCw0YDRi9C9INC606nRiNC10YHRliA1Miwg0JDRgdGC0LDQvdCwIDAyMDAwMCwg0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1suk!2spl!4v1740210553918!5m2!1suk!2spl"
-              width="100%"
-              height="550"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="Логотип компании" />
-          </a>
+      <div class="container">
+        <div class="footer-menu">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li>
+              <a href="./index.html#why-choose">Pourquoi nous choisir ?</a>
+            </li>
+            <li><a href="./index.html#about-us">À propos de nous</a></li>
+            <li><a href="./index.html#reviews">Avis</a></li>
+            <li><a href="./index.html#our-blog">Blog</a></li>
+            <li><a href="./index.html#faq">FAQ</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+          </ul>
         </div>
-
-        <nav class="footer-nav">
-          <ul>
-            <li><a href="investment-opportunities.html">Инвестиции</a></li>
-            <li>
-              <a href="case-studies.html">Кейсы</a>
-            </li>
-            <li>
-              <a href="our-services.html">Наши услуги</a>
-            </li>
-            <li>
-              <a href="about-us.html">О нас</a>
-            </li>
-          </ul>
+        <div class="footer-menu">
+          <h3>Pages de service</h3>
           <ul>
             <li>
-              <a href="privacy-policy.html">Политика конфиденциальности</a>
+              <a href="./cookie-policy.html">Politique des cookies</a>
             </li>
-            <li><a href="terms-of-use.html">Условия использования</a></li>
             <li>
-              <a href="cookie-policy.html">Политика использования cookie</a>
+              <a href="./privacy-policy.html">Politique de confidentialité</a>
             </li>
+            <li><a href="./terms-of-use.html">Conditions d'utilisation</a></li>
           </ul>
-        </nav>
-
+        </div>
         <div class="footer-contact">
+          <h3>Informations de contact</h3>
+          <p><strong>Téléphone :</strong> +1 5144 884 011</p>
           <p>
-            <strong>📍 Адрес:</strong> ул. Тимирязева 52, 010000 Нур-Султан,
-            Казахстан
+            <strong>Adresse :</strong> 5403 Côte Saint-Luc Rd, Montréal, Québec
+            H3X 2C3, Canada
           </p>
-          <p><strong>📞 Телефон:</strong> +7 777 123 4567</p>
           <p>
-            <strong>📧 Email:</strong>
-            <a href="mailto:contact@kazgrowth.com">contact@kazgrowth.com</a>
+            <strong>Email :</strong>
+            <a href="mailto:info@axonai.com">info@axonai.com</a>
           </p>
         </div>
       </div>
-
-      <div class="footer-wrap">
-        <p class="footer-right">
-          © 2025 KazGrowth Consulting. Все права защищены.
-        </p>
-        <p class="footer-warning">
-          Внимание: Инвестиции всегда связаны с рисками. Прошлые результаты не
-          гарантируют будущей прибыли. Перед принятием инвестиционных решений
-          рекомендуется проконсультироваться с профессиональными финансовыми
-          консультантами.
-        </p>
-      </div>
+      <p class="footer-rights">© Tous droits réservés 2025</p>
     </footer>
 
-    <div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-popup" id="cookiePopup">
       <div class="cookie-popup-content">
+        <h2>Utilisation des cookies</h2>
         <p>
-          Мы используем файлы cookie, чтобы обеспечить вам наилучшие впечатления
-          от использования нашего веб-сайта. наш сайт. Продолжая просмотр, вы
-          соглашаетесь на использование файлов cookie.
+          Nous utilisons des cookies pour améliorer votre expérience sur notre
+          site. En continuant votre navigation, vous acceptez notre
+          <a href="./cookie-policy.html">utilisation des cookies.</a>
         </p>
-        <button id="accept-cookie" class="cookie-btn">Принять</button>
+        <button class="cookie-btn" id="acceptCookies">Accepter</button>
       </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/schedule.js"></script>
   </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/header-menu.js"></script>
+  <script src="./js/animation.js"></script>
+  <script src="./js/swiper.js"></script>
 </html>
