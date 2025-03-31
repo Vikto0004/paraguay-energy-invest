@@ -485,7 +485,8 @@
   background-color: rgba(14, 14, 14, 0.32);
   padding: 13px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  max-width: 409px;
 }
 
 .why-choose-list-wrap img {
@@ -538,7 +539,7 @@
   }
 
   .why-choose-list li {
-    max-width: 350px;
+    max-width: none;
   }
 
   .swiper-button-next,
@@ -651,6 +652,7 @@
   .trigger .container {
     border-radius: 60px;
     padding: 30px 20px;
+    background-attachment: scroll;
   }
 
   .trigger-content {
@@ -765,7 +767,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 370px;
+    max-width: none;
   }
 }
 

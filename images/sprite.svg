@@ -26,32 +26,38 @@
   <path d="M738.5 4.5C491.667 -7.66666 -0.900015 58.9 3.49999 422.5" stroke="url(#paint0_linear_2_33)" stroke-width="6" />
 </symbol>
 
-    <linearGradient id="paint0_linear_2_33" x1="700.5" y1="-3.99998" x2="14.5" y2="361" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#343045" />
-      <stop offset="0.213542" stop-color="#C0B7E8" />
-      <stop offset="0.71875" stop-color="#8176AF" />
-      <stop offset="1" stop-color="#343045" />
-    </linearGradient>
+   <defs>
+      <linearGradient id="paint0_linear_2_33" x1="700.5" y1="-3.99998" x2="14.5" y2="361" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#343045" />
+        <stop offset="0.213542" stop-color="#C0B7E8" />
+        <stop offset="0.71875" stop-color="#8176AF" />
+        <stop offset="1" stop-color="#343045" />
+      </linearGradient>
+   </defs>
 
 
 
     <!-- Градієнт для першої кривої -->
-    <linearGradient id="paint0_linear" x1="365.5" y1="28" x2="110" y2="594" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#343045" />
-      <stop offset="0.276042" stop-color="#8176AF" />
-      <stop offset="0.739583" stop-color="#C0B7E8" />
-      <stop offset="1" stop-color="#343045" />
-    </linearGradient>
+   <defs>
+      <linearGradient id="paint0_linear" x1="365.5" y1="28" x2="110" y2="594" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#343045" />
+        <stop offset="0.276042" stop-color="#8176AF" />
+        <stop offset="0.739583" stop-color="#C0B7E8" />
+        <stop offset="1" stop-color="#343045" />
+      </linearGradient>
+   </defs>
 
 
 
     <!-- Градієнт для другої кривої -->
-    <linearGradient id="paint1_linear" x1="16.5" y1="39.5" x2="363" y2="814" gradientUnits="userSpaceOnUse">
-      <stop offset="0.0104167" stop-color="#343045" />
-      <stop offset="0.229167" stop-color="#C0B7E8" />
-      <stop offset="0.776042" stop-color="#8176AF" />
-      <stop offset="1" stop-color="#343045" />
-    </linearGradient>
+    <defs>
+      <linearGradient id="paint1_linear" x1="16.5" y1="39.5" x2="363" y2="814" gradientUnits="userSpaceOnUse">
+        <stop offset="0.0104167" stop-color="#343045" />
+        <stop offset="0.229167" stop-color="#C0B7E8" />
+        <stop offset="0.776042" stop-color="#8176AF" />
+        <stop offset="1" stop-color="#343045" />
+      </linearGradient>
+    </defs>
 
      <!-- Перша іконка -->
   <symbol id="curve4" viewBox="0 0 1440 219">
@@ -95,6 +101,4 @@
     <path d="M1.5 2L14 14.5L26.5 2"  stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
   </symbol>
   </defs>
-
-  
 </svg>
