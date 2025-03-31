@@ -24,8 +24,6 @@
 
     <symbol id="curve3" viewBox="0 0 736 423">
   <path d="M738.5 4.5C491.667 -7.66666 -0.900015 58.9 3.49999 422.5" stroke="url(#paint0_linear_2_33)" stroke-width="6" />
-</symbol>
-
    <defs>
       <linearGradient id="paint0_linear_2_33" x1="700.5" y1="-3.99998" x2="14.5" y2="361" gradientUnits="userSpaceOnUse">
         <stop stop-color="#343045" />
@@ -34,6 +32,7 @@
         <stop offset="1" stop-color="#343045" />
       </linearGradient>
    </defs>
+</symbol>
 
 
 

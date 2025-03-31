@@ -208,7 +208,6 @@
 
 .hero-wrapper use {
   stroke-width: 6;
-  stroke: url(#paint0_linear);
   fill: none;
   stroke-dasharray: 0 1000;
   stroke-dashoffset: 0;
