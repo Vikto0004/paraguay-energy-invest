@@ -1,0 +1,100 @@
+<svg   version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="burger" viewBox="0 0 32 32">
+      <path d="M5.334 23.027v-1.333h21.333v1.333h-21.333zM5.334 16.667v-1.333h21.333v1.333h-21.333zM5.334 10.307v-1.333h21.333v1.333h-21.333z" fill="currentColor"></path>
+    </symbol>
+   <symbol id="cross" viewBox="0 0 32 32">
+<path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
+</symbol>
+
+  <symbol id="line-arrow" viewBox="0 0 46 38">
+    <path d="M43.8333 19L2.16667 19M43.8333 19L27.1667 35.6666M43.8333 19L27.1667 2.33331" stroke="#C0B7E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+
+    <!-- Перша крива -->
+    <symbol id="curve" viewBox="0 0 416 675">
+      <path d="M415 3C325.774 17.8434 155.913 102.224 190.271 320.998C224.63 539.772 78.4065 646.155 1 672" stroke="url(#paint0_linear)"  />
+    </symbol>
+
+    <!-- Друга крива -->
+    <symbol id="curve2" viewBox="0 0 383 946">
+      <path d="M3.19293 0C-0.0879101 140.127 37.2087 433.314 212.642 485.053C388.075 536.792 391.776 746.576 371.697 845" stroke="url(#paint1_linear)" stroke-width="6" />
+    </symbol>
+
+    <symbol id="curve3" viewBox="0 0 736 423">
+  <path d="M738.5 4.5C491.667 -7.66666 -0.900015 58.9 3.49999 422.5" stroke="url(#paint0_linear_2_33)" stroke-width="6" />
+</symbol>
+
+    <linearGradient id="paint0_linear_2_33" x1="700.5" y1="-3.99998" x2="14.5" y2="361" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#343045" />
+      <stop offset="0.213542" stop-color="#C0B7E8" />
+      <stop offset="0.71875" stop-color="#8176AF" />
+      <stop offset="1" stop-color="#343045" />
+    </linearGradient>
+
+
+
+    <!-- Градієнт для першої кривої -->
+    <linearGradient id="paint0_linear" x1="365.5" y1="28" x2="110" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#343045" />
+      <stop offset="0.276042" stop-color="#8176AF" />
+      <stop offset="0.739583" stop-color="#C0B7E8" />
+      <stop offset="1" stop-color="#343045" />
+    </linearGradient>
+
+
+
+    <!-- Градієнт для другої кривої -->
+    <linearGradient id="paint1_linear" x1="16.5" y1="39.5" x2="363" y2="814" gradientUnits="userSpaceOnUse">
+      <stop offset="0.0104167" stop-color="#343045" />
+      <stop offset="0.229167" stop-color="#C0B7E8" />
+      <stop offset="0.776042" stop-color="#8176AF" />
+      <stop offset="1" stop-color="#343045" />
+    </linearGradient>
+
+     <!-- Перша іконка -->
+  <symbol id="curve4" viewBox="0 0 1440 219">
+    <path d="M-4.5 74.5C153.667 21.1667 504.6 -53.5 643 74.5C816 234.5 1071.5 258.5 1186.5 146C1278.5 56 1394.17 70.8333 1440.5 89.5" stroke="url(#paint0_linear_3_54)" stroke-opacity="0.13" stroke-width="6" />
+    <defs>
+      <linearGradient id="paint0_linear_3_54" x1="-5" y1="63" x2="1462" y2="62.9999" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#343045" />
+        <stop offset="0.224242" stop-color="#C0B7E8" />
+        <stop offset="0.786458" stop-color="#8176AF" />
+        <stop offset="0.96875" stop-color="#343045" />
+      </linearGradient>
+    </defs>
+  </symbol>
+
+  <!-- Друга іконка -->
+  <symbol id="curve5" viewBox="0 0 1440 262">
+    <path d="M1442.5 215C1387.5 104.333 1242.8 -83.7999 1104 49.0001C930.5 215 761.5 331.5 554.5 203.5C347.5 75.5001 34.5 175.5 -6.5 260" stroke="url(#paint0_linear_3_53)" stroke-opacity="0.13" stroke-width="6" />
+    <defs>
+      <linearGradient id="paint0_linear_3_53" x1="-7" y1="105.5" x2="1443" y2="89.0001" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#211E2E" />
+        <stop offset="0.3125" stop-color="#C0B7E8" />
+        <stop offset="0.765625" stop-color="#8176AF" />
+        <stop offset="0.994792" stop-color="#211E2E" />
+      </linearGradient>
+    </defs>
+  </symbol>
+
+  <symbol id="curve6" viewBox="0 0 1440 169">
+    <path d="M-9 21.7335C6.47753 71.4205 88.0505 181.243 245.37 106.768C350.5 57 405.361 2.72575 539.107 91.2619C672.853 179.798 776.317 173.796 841.423 82.2582C906.53 -9.27916 1076.11 -33.7892 1139.7 74.7552C1203.29 183.3 1417.79 196.305 1440 106.768" stroke="url(#paint0_linear_11_136)" stroke-width="6" />
+    <defs>
+      <linearGradient id="paint0_linear_11_136" x1="0.49999" y1="84.9999" x2="1440" y2="84.9998" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#343045" />
+        <stop offset="0.302083" stop-color="#C0B7E8" />
+        <stop offset="0.739583" stop-color="#8176AF" />
+        <stop offset="1" stop-color="#343045" />
+      </linearGradient>
+    </defs>
+  </symbol>
+
+   <symbol id="check-mark" viewBox="0 0 28 16">
+    <path d="M1.5 2L14 14.5L26.5 2"  stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+  </defs>
+
+  
+</svg>

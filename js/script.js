@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const cookiePopup = document.getElementById("cookiePopup");
   const acceptCookies = document.getElementById("acceptCookies");
 
-  if (!localStorage.getItem("cookiesAcceptedBazaRosta")) {
+  if (!localStorage.getItem("cookiesAcceptedAxonIA")) {
     cookiePopup.style.display = "block";
   }
 
   acceptCookies &&
     acceptCookies.addEventListener("click", function () {
-      localStorage.setItem("cookiesAcceptedBazaRosta", "true");
+      localStorage.setItem("cookiesAcceptedAxonIA", "true");
       cookiePopup.style.display = "none";
     });
 });

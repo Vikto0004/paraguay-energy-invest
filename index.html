@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="" />
-    <title>BazaRosta</title>
+    <title>AxonIA</title>
     <link rel="icon" href="images/logo.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -13,166 +19,490 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" href="./css/basic.css" />
-    <link rel="stylesheet" href="./css/animation.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
   <body>
     <header class="header">
       <a class="logo" href="./index.html">
-        <img src="./images/logo.png" alt="BazaRosta" />BazaRosta
+        <img src="./images/logo.png" alt="AxonIA" />AxonIA
       </a>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><a href="./index.html">Главная</a></li>
-          <li><a href="./pricing.html">Цены</a></li>
-          <li><a href="./blog.html">Блог</a></li>
-          <li><a href="./our-services.html">Наши услуги</a></li>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./index.html#why-choose">Pourquoi nous choisir ?</a></li>
+          <li><a href="./index.html#about-us">À propos de nous</a></li>
+          <li><a href="./index.html#reviews">Avis</a></li>
+          <li><a href="./index.html#our-blog">Blog</a></li>
           <li><a href="./index.html#faq">FAQ</a></li>
         </ul>
-        <a class="secondary-btn" href="./contact.html">Связаться</a>
+        <a class="secondary-btn" href="./index.html#contact">Contact</a>
       </nav>
+      <button class="burger-btn burgerBtn">
+        <svg>
+          <use href="./images/sprite.svg#burger"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu mobileMenu">
+        <button class="close-btn closeBtn">
+          <svg>
+            <use href="./images/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li><a class="mobile-nav-link" href="./index.html">Accueil</a></li>
+            <li>
+              <a class="mobile-nav-link" href="./index.html#why-choose"
+                >Pourquoi nous choisir ?</a
+              >
+            </li>
+            <li>
+              <a class="mobile-nav-link" href="./index.html#about-us"
+                >À propos de nous</a
+              >
+            </li>
+            <li>
+              <a class="mobile-nav-link" href="./index.html#reviews">Avis</a>
+            </li>
+            <li>
+              <a class="mobile-nav-link" href="./index.html#our-blog">Blog</a>
+            </li>
+            <li><a class="mobile-nav-link" href="./index.html#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <a class="primary-btn mobile-nav-link" href="./index.html#contact"
+          >Contact</a
+        >
+      </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title animate__bounce">
-            Make your dream business goal come true
-          </h1>
-          <p class="hero-text animate__bounceInUp">
-            when you need us for improve your business, then come with us to
-            help your business have reach it, you just sit and feel that goal
-          </p>
-          <button class="primary-btn animate__bounceInUp" type="button">
-            Start Project
-          </button>
-          <div class="hero-wrapper animate__fadeInUp">
-            <img class="hero-wrapper-img" src="./images/hero.jpg" alt="hero" />
-            <div class="hero-wrapper-content">
-              <div class="hero-wrapper-content-item">
-                <img src="./images/star.png" alt="star icon" />
-                <p>Great Project</p>
-              </div>
-              <p class="hero-wrapper-content-text"><span>800+</span> Done</p>
-            </div>
-            <div class="hero-wrapper-wrap">
-              <div class="hero-wrapper-wrap-item">
-                <img src="./images/bill-adams.jpg" alt="Bill Adams" />
-                <p>Bill Adams<span>CEO UpTech</span></p>
-              </div>
-              <p class="hero-wrapper-wrap-text">
-                “ This team is really the best in its field,I don't regret
-                working with them, and will come back again thanks “
-              </p>
+          <div class="hero-content" data-aos="fade-up-right">
+            <h1 class="hero-title">
+              <span>Dive</span> Into The Depths Of
+              <span>Virtual Reality</span>
+            </h1>
+            <p class="descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget.
+              Lectus mauris eros in vitae.
+            </p>
+            <button
+              class="primary-btn"
+              onclick="window.location.href = './index.html#contact'"
+            >
+              BUILD YOUR WORLD
+            </button>
+          </div>
+          <div class="hero-wrapper">
+            <img src="./images/hero.jpg" data-aos="zoom-in" alt="hero" />
+            <div class="hero-curve-wrap">
+              <svg class="curve-icon">
+                <use xlink:href="./images/sprite.svg#curve"></use>
+              </svg>
+              <svg class="curve2-icon">
+                <use xlink:href="./images/sprite.svg#curve2"></use>
+              </svg>
+              <svg class="curve3-icon">
+                <use xlink:href="./images/sprite.svg#curve3"></use>
+              </svg>
             </div>
           </div>
-        </div>
-        <div class="hero-circles">
-          <div class="hero-circles-left"></div>
-          <div class="hero-circles-right"></div>
         </div>
       </section>
 
       <section class="about-us" id="about-us">
         <div class="container">
-          <p class="section-name">About Us</p>
-          <h2 class="title">Our Teammate</h2>
+          <div class="about-us-wrapper">
+            <div class="container-title" data-aos="fade-right">
+              <h2 class="title">INTRODUCTION <span>TO HYDRA VR</span></h2>
+              <div class="container-title-line">
+                <svg>
+                  <use href="./images/sprite.svg#line-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="descr" data-aos="fade-left">
+              Vitae sapien pellentesque habitant morbi tristique senectus et
+              netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+              lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+              nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+              est placerat in. Lectus magna fringilla urna porttitor rhoncus
+              vitae.
+            </p>
+          </div>
           <div class="about-us-content">
-            <div class="about-us-content-wrap">
-              <img src="./images/about-us.jpg" alt="teamwork" />
-            </div>
-            <div class="about-us-text">
+            <img
+              class="about-us-img"
+              src="./images/about-us-ai.jpg"
+              alt="about us"
+              data-aos="flip-left"
+            />
+            <div class="about-us-text" data-aos="flip-right">
+              <h2 class="title"><span>ABOUT</span>HYDRA VR</h2>
               <p class="descr">
-                We move with make a Creative Strategy for help your business
-                goal, we help to improve your income by a services we have. make
-                your content look interesting and make people look for your
-                business
+                Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
+                mattis rhoncus urna neque viverra justo. Vivamus at augue eget
+                arcu dictum. Ultrices gravida dictum fusce ut placerat orci.
+                Aenean et tortor at risus viverra adipiscing at in. Mattis
+                aliquam faucibus purus in massa. Est placerat in egestas erat
+                imperdiet sed. Consequat semper viverra nam libero justo laoreet
+                sit amet. Aliquam etiam erat velit scelerisque in dictum non
+                consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec
+                ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet
+                nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n
+                tempor.
               </p>
-              <p class="descr">
-                We move with make a Creative Strategy for help your business
-                goal, we help to improve your income by a services we have. make
-                your content look interesting and make people look for your
-                business
-              </p>
-              <a class="primary-btn" href="./index.html#contact">Contact Us</a>
+              <a class="primary-btn" href="./index.html#contact"
+                >LET’S GET IN TOUCH</a
+              >
             </div>
+          </div>
+          <div class="about-us-curve">
+            <svg class="about-us-curve5">
+              <use href="./images/sprite.svg#curve4"></use>
+            </svg>
+            <svg class="about-us-curve4">
+              <use href="./images/sprite.svg#curve5"></use>
+            </svg>
           </div>
         </div>
       </section>
 
-      <section class="services" id="services">
+      <section class="why-choose" id="why-choose">
         <div class="container">
-          <div class="services-content">
-            <p class="section-name">Our Services</p>
-            <h2 class="title">Perfect and Fast Movement</h2>
-            <p class="descr">
-              We move with make a Creative Strategy for help your business goal,
-              we help to improve your income by a services we have. make your
-              content look interesting and make people look for your business
+          <div class="why-choose-wrapper">
+            <div class="container-title" data-aos="fade-right">
+              <h2 class="title">WHY BUILD <span>WITH HYDRA?</span></h2>
+              <div class="container-title-line">
+                <svg>
+                  <use href="./images/sprite.svg#line-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="descr" data-aos="fade-left">
+              Vitae sapien pellentesque habitant morbi tristique senectus et
+              netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+              lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+              nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+              est placerat in. Lectus magna fringilla urna porttitor rhoncus
+              vitae.
             </p>
-            <a href="./index.html#contact" class="link">Read more</a>
           </div>
-          <ul class="services-list">
-            <li>
-              <div class="services-list-item-img">
-                <img
-                  src="./images/social-media-management.png"
-                  alt="Social Media Management"
-                />
+          <div class="why-choose-content swiper mySwiper" data-aos="zoom-in-up">
+            <ul class="why-choose-list swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="why-choose-list-wrap">
+                  <img src="./images/simulation.jpg" alt="simulation" />
+                </div>
+                <h3 class="subtitle">SIMULATION</h3>
+                <div class="why-choose-list-line"></div>
+                <p class="why-choose-descr">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+              </li>
+              <li class="swiper-slide">
+                <div class="why-choose-list-wrap">
+                  <img src="./images/education.jpg" alt="education" />
+                </div>
+                <h3 class="subtitle">EDUCATION</h3>
+                <div class="why-choose-list-line"></div>
+                <p class="why-choose-descr">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+              </li>
+              <li class="swiper-slide">
+                <div class="why-choose-list-wrap">
+                  <img src="./images/self-care.jpg" alt="self-care" />
+                </div>
+                <h3 class="subtitle">SELF-CARE</h3>
+                <div class="why-choose-list-line"></div>
+                <p class="why-choose-descr">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+              </li>
+              <li class="swiper-slide">
+                <div class="why-choose-list-wrap">
+                  <img src="./images/outdoor.jpg" alt="outdoor" />
+                </div>
+                <h3 class="subtitle">OUTDOOR</h3>
+                <div class="why-choose-list-line"></div>
+                <p class="why-choose-descr">
+                  Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                  porttitor rhoncus libero justo laoreet sit amet vitae.
+                </p>
+              </li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trigger">
+        <div class="container">
+          <div class="trigger-content">
+            <h2 class="title">
+              TECHNOLOGIES & HARDWARE<span>USED BY HYDRA VR.</span>
+            </h2>
+            <a class="trigger-link" href="./index.html#contact"
+              ><svg>
+                <use href="./images/sprite.svg#check-mark"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-services" id="our-services">
+        <div class="container">
+          <div class="why-choose-wrapper">
+            <div class="container-title" data-aos="fade-right">
+              <h2 class="title">HOW WE BUILD <span>WITH HYDRA VR?</span></h2>
+              <div class="container-title-line">
+                <svg>
+                  <use href="./images/sprite.svg#line-arrow"></use>
+                </svg>
               </div>
-              <p>Social Media Management</p>
+            </div>
+            <p class="descr" data-aos="fade-left">
+              Vitae sapien pellentesque habitant morbi tristique senectus et
+              netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+              lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+              nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+              est placerat in. Lectus magna fringilla urna porttitor rhoncus
+              vitae.
+            </p>
+          </div>
+          <div class="swiper mySwiper" data-aos="zoom-in">
+            <ul class="our-services-list swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="our-services-list-wrap"><p>01</p></div>
+                <h3 class="subttile">3D Conception & Design</h3>
+              </li>
+              <li class="swiper-slide">
+                <div class="our-services-list-wrap"><p>02</p></div>
+                <h3 class="subttile">Interaction Design</h3>
+              </li>
+              <li class="swiper-slide">
+                <div class="our-services-list-wrap"><p>03</p></div>
+                <h3 class="subttile">VR World User Testing</h3>
+              </li>
+              <li class="swiper-slide">
+                <div class="our-services-list-wrap"><p>04</p></div>
+                <h3 class="subttile">Hydra VR Deploy</h3>
+              </li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <svg class="our-services-curve">
+            <use href="./images/sprite.svg#curve6"></use>
+          </svg>
+        </div>
+      </section>
+
+      <section class="our-blog" id="our-blog">
+        <div class="container">
+          <div class="why-choose-wrapper">
+            <div class="container-title" data-aos="fade-right">
+              <h2 class="title">FIND OUT OUR <span>LATEST NEWS</span></h2>
+              <div class="container-title-line">
+                <svg>
+                  <use href="./images/sprite.svg#line-arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="descr" data-aos="fade-left">
+              Vitae sapien pellentesque habitant morbi tristique senectus et
+              netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+              lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+              nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+              est placerat in. Lectus magna fringilla urna porttitor rhoncus
+              vitae.
+            </p>
+          </div>
+          <ul class="our-blog-list" data-aos="flip-up">
+            <li>
+              <img
+                class="our-blog-list-img"
+                src="./images/ai-trends.jpg"
+                alt="ai-trends"
+              />
+              <div class="our-blog-list-wrap">
+                <h3 class="subtitle">AI Trends</h3>
+                <div class="our-blog-list-line"></div>
+                <p class="descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="./blog/ai-trends.html" class="secondary-btn"
+                  >Learn More</a
+                >
+              </div>
             </li>
             <li>
-              <div class="services-list-item-img">
-                <img
-                  src="./images/search-engine-opimization.png"
-                  alt="Search Engine Opimization"
-                />
+              <img
+                class="our-blog-list-img"
+                src="./images/ai-applications.jpg"
+                alt="applications"
+              />
+              <div class="our-blog-list-wrap">
+                <h3 class="subtitle">Applications</h3>
+                <div class="our-blog-list-line"></div>
+                <p class="descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="./blog/ai-applications.html" class="secondary-btn"
+                  >Learn More</a
+                >
               </div>
-              <p>Search Engine Opimization</p>
             </li>
             <li>
-              <div class="services-list-item-img">
-                <img src="./images/design.png" alt="Design" />
+              <img
+                class="our-blog-list-img"
+                src="./images/ai-ethics.jpg"
+                alt="ai-ethics"
+              />
+              <div class="our-blog-list-wrap">
+                <h3 class="subtitle">AI Ethics</h3>
+                <div class="our-blog-list-line"></div>
+                <p class="descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="./blog/ai-ethics.html" class="secondary-btn"
+                  >Learn More</a
+                >
               </div>
-              <p>Design</p>
-            </li>
-            <li>
-              <div class="services-list-item-img">
-                <img src="./images/ads.png" alt="Ads" />
-              </div>
-              <p>Ads</p>
             </li>
           </ul>
         </div>
       </section>
 
-      section>div>p+h2+p
-
-      <section class="contact-section" id="contact">
+      <section class="faq" id="faq">
         <div class="container">
-          <h2 class="title">Свяжитесь с нами</h2>
+          <h2 data-aos="zoom-out-up" class="title">
+            Questions Fréquemment Posées
+          </h2>
+          <div data-aos="zoom-out" class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Qu'est-ce que l'intelligence artificielle ?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  L'intelligence artificielle (IA) est un domaine de
+                  l'informatique qui vise à créer des systèmes capables de
+                  simuler l'intelligence humaine, comme la reconnaissance
+                  vocale, la prise de décision et l'apprentissage automatique.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Comment l'IA est-elle utilisée aujourd'hui ?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  L'IA est utilisée dans de nombreux domaines, notamment
+                  l'analyse de données, les assistants virtuels, la
+                  reconnaissance d'images, et l'automatisation des processus
+                  industriels.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Quels sont les avantages de l'IA ?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  L'IA permet d'améliorer l'efficacité, de réduire les coûts, et
+                  de résoudre des problèmes complexes plus rapidement. Elle
+                  offre également des opportunités pour l'innovation dans divers
+                  secteurs.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 data-aos="fade-down-right" class="title">Contactez-nous</h2>
           <div class="contact-content">
-            <div class="contact-info">
-              <h3>Контактная информация</h3>
-              <p><strong>Телефон:</strong> +7 771 7051 111</p>
+            <div data-aos="fade-right" class="contact-info">
+              <h3>Informations de Contact</h3>
+              <p><strong>Téléphone :</strong> +1 5144 884 011</p>
               <p>
-                <strong>Адрес:</strong> Abay Ave 164, Almaty 050000, Kazakhstan
+                <strong>Adresse :</strong> 5403 Côte Saint Luc Rd, Montreal,
+                Quebec H3X 2C3, Canada
               </p>
               <p>
-                <strong>Электронная почта:</strong>
-                <a href="mailto:info@bazarosta.com">info@bazarosta.com</a>
+                <strong>Email :</strong>
+                <a href="mailto:info@axonai.com">info@axonai.com</a>
               </p>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d555.507831490084!2d76.87980005558332!3d43.23688615319821!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883690ee29c808d%3A0xad0008586a665dd6!2sAbay%20Ave%20164%2C%20Almaty%20050000%2C%20Kazakhstan!5e0!3m2!1sen!2sus!4v1742415705507!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d240.50650318161755!2d-73.62451500875378!3d45.47948241517995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9175392c24f59%3A0xbc2843c7d3f3a741!2s5395%20C%C3%B4te%20Saint%20Luc%20Rd%20%23100%2C%20Montreal%2C%20QC%20H3X%202C3%2C%20Canada!5e0!3m2!1sen!2sus!4v1742933246973!5m2!1sen!2sus"
                 width="600"
                 height="450"
                 style="border: 0"
@@ -181,54 +511,54 @@
                 class="contact-map"
               ></iframe>
             </div>
-            <div class="contact-form">
-              <h3>Отправьте нам сообщение</h3>
+            <div data-aos="fade-left" class="contact-form-wrapper">
+              <h3>Envoyez-nous un message</h3>
               <form class="contact-form">
                 <div class="form-group">
-                  <label for="first-name">Имя</label>
+                  <label for="first-name">Prénom</label>
                   <input
                     type="text"
                     id="first-name"
                     name="first-name"
                     required
-                    pattern="[A-Za-zА-Яа-яЁё\s]{2,}"
-                    title="Имя должно содержать хотя бы 2 буквы"
+                    pattern="[A-Za-zÀ-ÿ\s]{2,}"
+                    title="Le prénom doit contenir au moins 2 lettres"
                   />
                 </div>
                 <div class="form-group">
-                  <label for="last-name">Фамилия</label>
+                  <label for="last-name">Nom</label>
                   <input
                     type="text"
                     id="last-name"
                     name="last-name"
                     required
-                    pattern="[A-Za-zА-Яа-яЁё\s]{2,}"
-                    title="Фамилия должна содержать хотя бы 2 буквы"
+                    pattern="[A-Za-zÀ-ÿ\s]{2,}"
+                    title="Le nom doit contenir au moins 2 lettres"
                   />
                 </div>
                 <div class="form-group">
-                  <label for="phone">Телефон</label>
+                  <label for="phone">Téléphone</label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
                     required
                     pattern="\+?[0-9\s\-\(\)]{7,}"
-                    title="Введите правильный номер телефона"
+                    title="Entrez un numéro de téléphone valide"
                   />
                 </div>
                 <div class="form-group">
-                  <label for="email">Электронная почта</label>
+                  <label for="email">Email</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     required
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    title="Введите правильный адрес электронной почты"
+                    title="Entrez une adresse email valide"
                   />
                 </div>
-                <button type="submit" class="primary-btn">Отправить</button>
+                <button type="submit" class="primary-btn">Envoyer</button>
               </form>
             </div>
           </div>
@@ -239,55 +569,69 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-menu">
-          <p>Меню</p>
+          <h3>Menu</h3>
           <ul>
-            <li><a href="./index.html">Главная</a></li>
-            <li><a href="./pricing.html">Цены</a></li>
-            <li><a href="./blog.html">Блог</a></li>
-            <li><a href="./our-services.html">Наши услуги</a></li>
+            <li><a href="./index.html">Accueil</a></li>
+            <li>
+              <a href="./index.html#why-choose">Pourquoi nous choisir ?</a>
+            </li>
+            <li><a href="./index.html#about-us">À propos de nous</a></li>
+            <li><a href="./index.html#reviews">Avis</a></li>
+            <li><a href="./index.html#our-blog">Blog</a></li>
             <li><a href="./index.html#faq">FAQ</a></li>
-            <a href="./contact.html">Связаться</a>
+            <li><a href="./index.html#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-menu">
-          <p>Сервисные страницы</p>
+          <h3>Pages de service</h3>
           <ul>
             <li>
-              <a href="./cookie-policy.html">Политика использования cookie</a>
+              <a href="./cookie-policy.html">Politique des cookies</a>
             </li>
             <li>
-              <a href="./privacy-policy.html">Политика конфиденциальности</a>
+              <a href="./privacy-policy.html">Politique de confidentialité</a>
             </li>
-            <li><a href="./terms-of-use.html">Условия использования</a></li>
+            <li><a href="./terms-of-use.html">Conditions d'utilisation</a></li>
           </ul>
         </div>
         <div class="footer-contact">
-          <h3>Контактная информация</h3>
-          <p><strong>Телефон:</strong> +7 771 7051 111</p>
-          <p><strong>Адрес:</strong> Abay Ave 164, Almaty 050000, Kazakhstan</p>
+          <h3>Informations de contact</h3>
+          <p><strong>Téléphone :</strong> +1 5144 884 011</p>
           <p>
-            <strong>Email:</strong>
-            <a href="mailto:info@bazarosta.com">info@bazarosta.com</a>
+            <strong>Adresse :</strong> 5403 Côte Saint-Luc Rd, Montréal, Québec
+            H3X 2C3, Canada
+          </p>
+          <p>
+            <strong>Email :</strong>
+            <a href="mailto:info@axonai.com">info@axonai.com</a>
           </p>
         </div>
       </div>
-      <p class="footer-rights">© Все права защищены 2025</p>
+      <p class="footer-rights">© Tous droits réservés 2025</p>
     </footer>
 
     <div class="cookie-popup" id="cookiePopup">
       <div class="cookie-popup-content">
-        <h2>Использование файлов cookie</h2>
+        <h2>Utilisation des cookies</h2>
         <p>
-          Мы используем файлы cookie для улучшения вашего опыта на нашем сайте.
-          Продолжая просмотр, вы соглашаетесь с нашим
-          <a href="./cookie-policy.html">использованием файлов cookie.</a>
+          Nous utilisons des cookies pour améliorer votre expérience sur notre
+          site. En continuant votre navigation, vous acceptez notre
+          <a href="./cookie-policy.html">utilisation des cookies.</a>
         </p>
-        <button class="cookie-btn" id="acceptCookies">Принять</button>
+        <button class="cookie-btn" id="acceptCookies">Accepter</button>
       </div>
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./js/header-menu.js"></script>
+  <script src="./js/animation.js"></script>
+  <script src="./js/swiper.js"></script>
 </html>
